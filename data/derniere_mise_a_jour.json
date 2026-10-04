@@ -1,7 +1,7 @@
 {
   "foot": {
     "premier-league": {
-      "heure": "2026-10-04T20:19:03Z",
+      "heure": "2026-10-04T21:18:39Z",
       "source_resultats": "openfootball",
       "matchs_joues": 45,
       "matchs_au_calendrier": 380,
@@ -9,7 +9,7 @@
       "statut": "ok"
     },
     "la-liga": {
-      "heure": "2026-10-04T20:19:04Z",
+      "heure": "2026-10-04T21:18:39Z",
       "source_resultats": "openfootball",
       "matchs_joues": 64,
       "matchs_au_calendrier": 380,
@@ -17,7 +17,7 @@
       "statut": "ok"
     },
     "ligue-1": {
-      "heure": "2026-10-04T20:19:04Z",
+      "heure": "2026-10-04T21:18:39Z",
       "source_resultats": "openfootball",
       "matchs_joues": 41,
       "matchs_au_calendrier": 306,
@@ -25,5 +25,13 @@
       "statut": "ok"
     }
   },
-  "derniere_execution": "2026-10-04T20:20:14Z"
+  "derniere_execution": "2026-10-04T21:20:37Z",
+  "nba": {
+    "heure": "2026-10-04T21:18:39Z",
+    "statut": "ok",
+    "jours_interroges": 4036,
+    "jours_en_echec": 0,
+    "matchs_total": 14241,
+    "dernier_resultat": "2026-06-13"
+  }
 }
