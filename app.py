@@ -38,22 +38,22 @@ def cle_donnees() -> float:
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
-def foot_donnees(ligue: str, _cle: float):
+def foot_donnees(ligue: str, cle: float):
     return charger_resultats_foot(ligue), charger_calendrier_foot(ligue)
 
 
 @st.cache_resource(ttl=3600, show_spinner="Entraînement du modèle…")
-def foot_modele(ligue: str, jour: date, _cle: float) -> ModeleFoot:
-    res, _ = foot_donnees(ligue, _cle)
+def foot_modele(ligue: str, jour: date, cle: float) -> ModeleFoot:
+    res, _ = foot_donnees(ligue, cle)
     t = pd.Timestamp(jour)
     histo = res[(res["Date"] < t) & (res["Date"] >= t - pd.Timedelta(days=FENETRE_JOURS))]
     return ModeleFoot().ajuster(histo, date_ref=t)
 
 
 @st.cache_data(ttl=3600, show_spinner="Calcul du bilan de la saison…")
-def foot_bilan_saison(ligue: str, _cle: float) -> pd.DataFrame:
+def foot_bilan_saison(ligue: str, cle: float) -> pd.DataFrame:
     """Pronostics « d'avant-match » pour chaque match déjà joué cette saison."""
-    res, _ = foot_donnees(ligue, _cle)
+    res, _ = foot_donnees(ligue, cle)
     saison = saison_en_cours_foot(ligue)
     jouees = res[res["Saison"] == saison]
     if jouees.empty:
@@ -75,7 +75,7 @@ def foot_bilan_saison(ligue: str, _cle: float) -> pd.DataFrame:
 
 
 @st.cache_data(ttl=3600, show_spinner="Calcul des notes Elo…")
-def nba_donnees(_cle: float):
+def nba_donnees(cle: float):
     matchs, a_venir = charger_nba()
     elo = EloNBA()
     res, notes = elo.parcourir(matchs)
