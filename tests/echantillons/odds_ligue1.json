@@ -1,0 +1,22 @@
+[
+  {"id": "e1", "sport_key": "soccer_france_ligue_one", "commence_time": "2026-10-18T15:15:00Z",
+   "home_team": "Paris FC", "away_team": "Rennes",
+   "bookmakers": [
+     {"key": "pinnacle", "title": "Pinnacle", "last_update": "2026-10-05T06:00:00Z",
+      "markets": [{"key": "h2h", "outcomes": [
+        {"name": "Paris FC", "price": 3.10}, {"name": "Rennes", "price": 2.30}, {"name": "Draw", "price": 3.40}]}]},
+     {"key": "unibet_eu", "title": "Unibet", "last_update": "2026-10-05T06:00:00Z",
+      "markets": [{"key": "h2h", "outcomes": [
+        {"name": "Paris FC", "price": 3.00}, {"name": "Rennes", "price": 2.35}, {"name": "Draw", "price": 3.30}]}]}
+   ]},
+  {"id": "e2", "sport_key": "soccer_france_ligue_one", "commence_time": "2026-10-04T19:45:00Z",
+   "home_team": "Paris Saint Germain", "away_team": "Le Mans",
+   "bookmakers": [{"key": "pinnacle", "title": "Pinnacle", "last_update": "2026-10-04T20:10:00Z",
+      "markets": [{"key": "h2h", "outcomes": [
+        {"name": "Paris Saint Germain", "price": 1.05}, {"name": "Le Mans", "price": 30.0}, {"name": "Draw", "price": 15.0}]}]}]},
+  {"id": "e3", "sport_key": "soccer_france_ligue_one", "commence_time": "2026-10-19T13:00:00Z",
+   "home_team": "FC Nantes", "away_team": "Lyon",
+   "bookmakers": [{"key": "pinnacle", "title": "Pinnacle", "last_update": "2026-10-05T06:00:00Z",
+      "markets": [{"key": "h2h", "outcomes": [
+        {"name": "FC Nantes", "price": 3.5}, {"name": "Lyon", "price": 2.1}, {"name": "Draw", "price": 3.4}]}]}]}
+]

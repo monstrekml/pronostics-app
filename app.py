@@ -16,10 +16,11 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 from basket_elo import EloNBA                                          # noqa: E402
 from donnees import (                                                  # noqa: E402
-    charger_calendrier_foot, charger_nba, charger_resultats_foot, date_fichier, etat_mise_a_jour,
+    charger_calendrier_foot, charger_cotes, charger_nba, charger_resultats_foot, date_fichier, etat_mise_a_jour,
     saison_en_cours_foot,
 )
 from foot_poisson import ModeleFoot                                    # noqa: E402
+from marche import bilan as bilan_marche, combiner                     # noqa: E402
 from metriques import log_loss                                         # noqa: E402
 from sources import DATA, LIGUES, RACINE                               # noqa: E402
 
@@ -80,6 +81,82 @@ def nba_donnees(cle: float):
     elo = EloNBA()
     res, notes = elo.parcourir(matchs)
     return res, notes, a_venir
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def cotes(sport: str, cle: float) -> pd.DataFrame:
+    return charger_cotes(sport)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def foot_face_au_marche(ligue: str, cle: float):
+    """Matchs déjà joués pour lesquels une cote d'avant-match a été archivée."""
+    b, c = foot_bilan_saison(ligue, cle), cotes(ligue, cle)
+    if b.empty or c.empty:
+        return pd.DataFrame(), 0.5, 0
+    m = b.merge(c, left_on=["Domicile", "Extérieur"], right_on=["dom", "ext"])
+    m = m[(m["Date"] - pd.to_datetime(m["date"])).abs() <= pd.Timedelta(days=3)]
+    if m.empty:
+        return pd.DataFrame(), 0.5, 0
+    y = m["Resultat"].to_numpy()
+    met, w = bilan_marche(m[["p1", "pN", "p2"]].to_numpy(), m[["p_dom", "p_nul", "p_ext"]].to_numpy(), y, True)
+    return met, w, len(m)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def nba_face_au_marche(cle: float):
+    res, _, _ = nba_donnees(cle)
+    c = cotes("nba", cle)
+    if c.empty:
+        return pd.DataFrame(), 0.5, 0
+    r = res.assign(date=res["date"].dt.strftime("%Y-%m-%d"))
+    m = r.merge(c, on=["date", "dom", "ext"], suffixes=("", "_c"))
+    if m.empty:
+        return pd.DataFrame(), 0.5, 0
+    y = m["victoire_dom"].to_numpy()
+    pm = np.c_[1 - m["p_elo_dom"], m["p_elo_dom"]]
+    pk = np.c_[m["p_ext"], m["p_dom"]]
+    met, w = bilan_marche(pm, pk, y, False)
+    return met, w, len(m)
+
+
+def section_marche(met: pd.DataFrame, w: float, n: int, foot: bool) -> None:
+    st.divider()
+    st.markdown("**Le modèle face au marché des paris**")
+    if n == 0:
+        st.info("Aucun match joué n'a encore de cote archivée. Les cotes sont enregistrées à chaque mise à jour "
+                "(secret ODDS_API_KEY) : ce bilan se remplira au fil des journées.")
+        return
+    st.markdown(f"Sur **{n} matchs** joués depuis le début de l'archivage des cotes, avec les cotes relevées "
+                "avant le coup d'envoi.")
+    if n < 30:
+        st.caption("Encore trop peu de matchs pour conclure : ces chiffres vont beaucoup bouger.")
+    cols = {"precision": st.column_config.NumberColumn("Bons pronostics", format="%.1f %%"),
+            "log_loss": st.column_config.NumberColumn("Log loss ↓", format="%.3f"),
+            "brier": st.column_config.NumberColumn("Brier ↓", format="%.3f"),
+            "rps": st.column_config.NumberColumn("RPS ↓", format="%.3f"),
+            "n_matchs": "Matchs", "modele": "Source des probabilités"}
+    st.dataframe(met.assign(precision=met["precision"] * 100), hide_index=True, column_config=cols)
+    st.caption("Le marché intègre des informations que le modèle n'a pas (blessures, compositions, transferts). "
+               f"Le poids du modèle dans la version combinée ({w:.0%}) est réglé automatiquement dès 150 matchs ; "
+               "avant, il est fixé à 50 %.")
+
+
+def choisir_probas(disponible: bool, cle_widget: str) -> str:
+    if not disponible:
+        st.caption("Cotes des bookmakers : pas encore disponibles pour ces matchs.")
+        return "Modèle"
+    return st.radio("Probabilités affichées", ["Modèle", "Marché", "Combiné"], horizontal=True, key=cle_widget,
+                    help="Modèle : notre calcul. Marché : cotes moyennes des bookmakers, marge retirée. "
+                         "Combiné : mélange des deux.")
+
+
+def ecart_texte(pm: np.ndarray, pk: np.ndarray | None, issues: list[str]) -> str:
+    if pk is None:
+        return "—"
+    d = pm - pk
+    i = int(np.argmax(np.abs(d)))
+    return f"{issues[i]} : {d[i] * 100:+.0f} pts"
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
@@ -200,18 +277,37 @@ def page_foot(ligue: str) -> None:
             if a_venir.empty:
                 st.info("Aucun match prévu sur cette période.")
             else:
+                c = cotes(ligue, cle)
+                c = c[pd.to_datetime(c["date"]).dt.date >= aujourdhui - timedelta(days=1)] if not c.empty else c
+                index_cotes = {(r.dom, r.ext): np.array([r.p_dom, r.p_nul, r.p_ext]) for r in c.itertuples()}
+                dispo = any((r.HomeTeam, r.AwayTeam) in index_cotes for r in a_venir.itertuples())
+                mode = choisir_probas(dispo, f"mode_{ligue}")
+                _, poids, _ = foot_face_au_marche(ligue, cle)
                 lignes = []
                 for r in a_venir.itertuples():
                     p = modele.predire(r.HomeTeam, r.AwayTeam)
+                    pm = np.array([p["p_dom"], p["p_nul"], p["p_ext"]])
+                    pk = index_cotes.get((r.HomeTeam, r.AwayTeam))
+                    pa = {"Modèle": pm, "Marché": pk,
+                          "Combiné": combiner(pm[None], pk[None], poids)[0] if pk is not None else None}[mode]
                     score = modele.scores_probables(r.HomeTeam, r.AwayTeam, 1)[0]
-                    issues = {"1": p["p_dom"], "N": p["p_nul"], "2": p["p_ext"]}
-                    lignes.append({"Date": f"{JOURS[r.Date.weekday()]} {r.Date:%d/%m}", "Heure": r.Heure, "Domicile": r.HomeTeam,
-                                   "Extérieur": r.AwayTeam, "1": p["p_dom"] * 100, "N": p["p_nul"] * 100,
-                                   "2": p["p_ext"] * 100, "+2,5 buts": p["p_plus_2_5"] * 100,
-                                   "Score le plus probable": f"{score[0]} ({score[1]:.0%})",
-                                   "Tendance": max(issues, key=issues.get)})
+                    ligne = {"Date": f"{JOURS[r.Date.weekday()]} {r.Date:%d/%m}", "Heure": r.Heure,
+                             "Domicile": r.HomeTeam, "Extérieur": r.AwayTeam}
+                    if pa is None:
+                        ligne.update({"1": None, "N": None, "2": None, "Tendance": "pas de cote"})
+                    else:
+                        ligne.update({"1": pa[0] * 100, "N": pa[1] * 100, "2": pa[2] * 100,
+                                      "Tendance": ["1", "N", "2"][int(np.argmax(pa))]})
+                    ligne.update({"+2,5 buts": p["p_plus_2_5"] * 100,
+                                  "Score le plus probable": f"{score[0]} ({score[1]:.0%})",
+                                  "Écart vs marché": ecart_texte(pm, pk, ["1", "N", "2"])})
+                    lignes.append(ligne)
                 st.dataframe(pd.DataFrame(lignes), hide_index=True, width="stretch",
                              column_config={"1": POURCENT, "N": POURCENT, "2": POURCENT, "+2,5 buts": POURCENT})
+                if dispo:
+                    st.caption("Écart vs marché : l'issue sur laquelle le modèle et les bookmakers divergent le "
+                               "plus, en points de pourcentage (positif = le modèle y croit davantage). Un gros écart "
+                               "signale le plus souvent une information que le modèle ignore (blessure, composition).")
                 st.caption(f"Modèle entraîné sur {len(res[res['Date'] >= pd.Timestamp(aujourdhui) - pd.Timedelta(days=FENETRE_JOURS)])} "
                            f"matchs des deux dernières saisons, les plus récents comptant davantage.")
 
@@ -293,6 +389,8 @@ def page_foot(ligue: str) -> None:
 
     with onglets[4]:
         fiabilite("foot")
+        met, w, n = foot_face_au_marche(ligue, cle)
+        section_marche(met, w, n, True)
 
 
 # =============================================================== page NBA
@@ -318,13 +416,24 @@ def page_nba() -> None:
         if a_venir.empty:
             st.info("Aucun match programmé dans les 14 prochains jours (ou calendrier pas encore récupéré).")
         else:
+            c = cotes("nba", cle)
+            index_cotes = {(r.date, r.dom, r.ext): np.array([r.p_dom, r.p_ext]) for r in c.itertuples()} if not c.empty else {}
+            dispo = any((r.date, r.dom, r.ext) in index_cotes for r in a_venir.itertuples())
+            mode = choisir_probas(dispo, "mode_nba")
+            _, poids, _ = nba_face_au_marche(cle)
             lignes = []
             for r in a_venir.sort_values(["date", "heure_paris"]).itertuples():
                 p = elo.predire(notes_a_jour, r.dom, r.ext, bool(r.neutre))
+                pm = np.array([p["p_dom"], p["p_ext"]])
+                pk = index_cotes.get((r.date, r.dom, r.ext))
+                pa = {"Modèle": pm, "Marché": pk,
+                      "Combiné": combiner(pm[None], pk[None], poids)[0] if pk is not None else None}[mode]
                 fav = r.dom if p["p_dom"] >= 0.5 else r.ext
                 lignes.append({"Date (heure de Paris)": r.heure_paris, "Domicile": r.dom, "Extérieur": r.ext,
-                               "Victoire domicile": p["p_dom"] * 100, "Victoire extérieur": p["p_ext"] * 100,
-                               "Écart prévu": f"{fav} de {abs(p['ecart']):.0f} pts"})
+                               "Victoire domicile": None if pa is None else pa[0] * 100,
+                               "Victoire extérieur": None if pa is None else pa[1] * 100,
+                               "Écart prévu (Elo)": f"{fav} de {abs(p['ecart']):.0f} pts",
+                               "Écart vs marché": ecart_texte(pm, pk, [r.dom, r.ext])})
             st.dataframe(pd.DataFrame(lignes), hide_index=True, width="stretch",
                          column_config={"Victoire domicile": POURCENT, "Victoire extérieur": POURCENT})
             if saison_cible > derniere_saison:
@@ -379,6 +488,8 @@ def page_nba() -> None:
 
     with onglets[4]:
         fiabilite("nba")
+        met, w, n = nba_face_au_marche(cle)
+        section_marche(met, w, n, False)
 
 
 # =============================================================== mise en page
@@ -401,6 +512,13 @@ def barre_laterale() -> tuple[str, str | None]:
             st.caption(f"Détail : {info.get('erreur', '')[:150]}")
         if info.get("dernier_resultat"):
             st.caption(f"Dernier résultat connu : {pd.Timestamp(info['dernier_resultat']):%d/%m/%Y}")
+        etat_cotes = etat.get("cotes") or {}
+        if etat_cotes.get("statut") == "ok":
+            st.caption(f"Cotes : {etat_cotes.get('matchs_archives', 0)} matchs archivés"
+                       + (f", {etat_cotes['credits_restants']} crédits API restants ce mois-ci"
+                          if etat_cotes.get("credits_restants") else ""))
+        elif etat_cotes.get("statut") == "erreur":
+            st.caption("Cotes : dernière récupération en échec")
         if info.get("source_resultats"):
             st.caption(f"Source : {info['source_resultats']}")
         st.divider()

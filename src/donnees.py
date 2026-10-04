@@ -91,3 +91,12 @@ def charger_nba() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 def date_fichier(chemin: Path) -> float:
     return chemin.stat().st_mtime if chemin.exists() else 0.0
+
+
+def charger_cotes(sport: str) -> pd.DataFrame:
+    """Archive des cotes d'avant-match pour un championnat (« ligue-1 », « nba »…)."""
+    f = DATA / "cotes" / "cotes.csv"
+    if not f.exists():
+        return pd.DataFrame()
+    d = pd.read_csv(f)
+    return d[d["sport"] == sport].reset_index(drop=True)

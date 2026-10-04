@@ -48,6 +48,8 @@ jobs:
         env:
           # Facultatif : clé gratuite football-data.org (Settings > Secrets and variables > Actions)
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          # Facultatif : clé gratuite The Odds API (cotes des bookmakers, 500 crédits/mois)
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/mise_a_jour.py
 
       - name: Backtest (le lundi matin, ou à la demande)

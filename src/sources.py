@@ -69,6 +69,13 @@ def telecharger(url: str, entetes: dict | None = None, essais: int = 3, delai: f
     raise RuntimeError("inaccessible")
 
 
+def telecharger_json_avec_quota(url: str) -> tuple[object, str | None]:
+    """Comme `telecharger`, mais renvoie aussi le quota restant annoncé par l'API."""
+    req = urllib.request.Request(url, headers={"User-Agent": "pronostics-pedagogique/1.0"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read()), r.headers.get("x-requests-remaining")
+
+
 def saison_foot(jour: date) -> str:
     """Saison de football contenant ce jour, au format openfootball : '2026-27'."""
     debut = jour.year if jour.month >= 7 else jour.year - 1
@@ -228,3 +235,125 @@ def recuperer_espn(debut: date, fin: date, travailleurs: int = 4) -> tuple[pd.Da
             elif df is not None and len(df):
                 morceaux.append(df)
     return (pd.concat(morceaux, ignore_index=True) if morceaux else pd.DataFrame()), erreurs
+
+
+# ---------------------------------------------------------------- cotes (The Odds API, offre gratuite)
+URL_ODDS = ("https://api.the-odds-api.com/v4/sports/{sport}/odds/"
+            "?apiKey={cle}&regions=eu&markets=h2h&oddsFormat=decimal&dateFormat=iso")
+ODDS_SPORTS = {
+    "premier-league": "soccer_epl",
+    "la-liga": "soccer_spain_la_liga",
+    "ligue-1": "soccer_france_ligue_one",
+    "nba": "basketball_nba",
+}
+COLONNES_COTES = ["sport", "id_cotes", "date", "debut_utc", "dom", "ext", "p_dom", "p_nul", "p_ext",
+                  "cote_dom", "cote_nul", "cote_ext", "marge", "n_bookmakers", "releve_utc"]
+
+
+def _simplifier(nom: str) -> str:
+    import unicodedata
+    n = unicodedata.normalize("NFKD", nom).encode("ascii", "ignore").decode().lower()
+    n = re.sub(r"[^a-z0-9 ]", " ", n)
+    n = re.sub(r"\b(fc|afc|cf|sc|ac|sad|cd|ud|rc|rcd|es|club|de|the|and|stade|real)\b", " ", n)
+    return re.sub(r"\s+", " ", n).strip()
+
+
+def associer_equipe(nom: str, candidats: set[str], correspondance: dict[str, str]) -> str | None:
+    """Retrouve, parmi les équipes du championnat, celle qui correspond à un nom
+    venant d'une autre source (« Paris Saint Germain » -> « Paris SG »)."""
+    if nom in candidats:
+        return nom
+    if correspondance.get(nom) in candidats:
+        return correspondance[nom]
+    cible = _simplifier(nom)
+    meilleur, score = None, 0.0
+    from difflib import SequenceMatcher
+    for cand in candidats:
+        variantes = [cand] + [k for k, v in correspondance.items() if v == cand]
+        for v in variantes:
+            s = _simplifier(v)
+            r = SequenceMatcher(None, cible, s).ratio()
+            if s and (s in cible or cible in s):
+                r = max(r, 0.9)
+            if r > score:
+                meilleur, score = cand, r
+    return meilleur if score >= 0.75 else None
+
+
+def _nba_depuis_nom_complet(nom: str) -> str | None:
+    """« Golden State Warriors » -> « Warriors », « Philadelphia 76ers » -> « Sixers »."""
+    vers_espn = {v: k for k, v in NBA_NOMS.items()}                  # Sixers -> 76ers
+    for franchise in sorted(NBA_FRANCHISES, key=lambda f: -len(vers_espn.get(f, f))):
+        if nom.endswith(vers_espn.get(franchise, franchise)):
+            return franchise
+    return None
+
+
+def analyser_cotes(brut: list, ligue: str, candidats: set[str] | None = None,
+                   correspondance: dict[str, str] | None = None, releve: str = "") -> tuple[pd.DataFrame, list[str]]:
+    """Une ligne par match : probabilités implicites moyennes (marge retirée) et meilleures cotes.
+
+    Retourne aussi la liste des noms d'équipes qui n'ont pas pu être associés."""
+    lignes, inconnus = [], []
+    est_nba = ligue == "nba"
+    fuseau = ZoneInfo("America/New_York" if est_nba else "Europe/Paris")
+    for ev in brut or []:
+        if est_nba:
+            dom, ext = _nba_depuis_nom_complet(ev["home_team"]), _nba_depuis_nom_complet(ev["away_team"])
+        else:
+            dom = associer_equipe(ev["home_team"], candidats or set(), correspondance or {})
+            ext = associer_equipe(ev["away_team"], candidats or set(), correspondance or {})
+        if not dom or not ext or dom == ext:
+            inconnus += [n for n, v in ((ev["home_team"], dom), (ev["away_team"], ext)) if not v]
+            continue
+        probas, meilleures = [], {"dom": 0.0, "nul": 0.0, "ext": 0.0}
+        for bk in ev.get("bookmakers", []):
+            marche = next((m for m in bk.get("markets", []) if m.get("key") == "h2h"), None)
+            if not marche:
+                continue
+            prix = {}
+            for o in marche.get("outcomes", []):
+                if o["name"] == ev["home_team"]:
+                    prix["dom"] = float(o["price"])
+                elif o["name"] == ev["away_team"]:
+                    prix["ext"] = float(o["price"])
+                elif o["name"].lower() == "draw":
+                    prix["nul"] = float(o["price"])
+            attendues = ("dom", "ext") if est_nba else ("dom", "nul", "ext")
+            if not all(k in prix and prix[k] > 1 for k in attendues):
+                continue
+            impl = {k: 1 / prix[k] for k in attendues}
+            total = sum(impl.values())
+            probas.append({k: v / total for k, v in impl.items()} | {"marge": total - 1})
+            for k in attendues:
+                meilleures[k] = max(meilleures[k], prix[k])
+        if not probas:
+            continue
+        moy = lambda k: sum(p.get(k, 0.0) for p in probas) / len(probas)  # noqa: E731
+        dt = datetime.fromisoformat(ev["commence_time"].replace("Z", "+00:00")).astimezone(fuseau)
+        lignes.append({
+            "sport": ligue, "id_cotes": ev.get("id"), "date": dt.strftime("%Y-%m-%d"),
+            "debut_utc": ev["commence_time"], "dom": dom, "ext": ext,
+            "p_dom": moy("dom"), "p_nul": None if est_nba else moy("nul"), "p_ext": moy("ext"),
+            "cote_dom": meilleures["dom"], "cote_nul": None if est_nba else meilleures["nul"],
+            "cote_ext": meilleures["ext"], "marge": moy("marge"), "n_bookmakers": len(probas),
+            "releve_utc": releve,
+        })
+    return pd.DataFrame(lignes, columns=COLONNES_COTES), inconnus
+
+
+def fusionner_cotes(archive: pd.DataFrame, nouvelles: pd.DataFrame, maintenant_utc: datetime) -> pd.DataFrame:
+    """Garde le relevé le plus récent de chaque match tant qu'il n'a pas commencé :
+    après le coup d'envoi, la dernière cote archivée reste figée (≈ cote de clôture)."""
+    # les matchs déjà commencés sont ignorés : leurs cotes « en direct » ne sont plus des cotes d'avant-match
+    if not nouvelles.empty:
+        debut = pd.to_datetime(nouvelles["debut_utc"], utc=True)
+        nouvelles = nouvelles[debut > pd.Timestamp(maintenant_utc)]
+    if nouvelles.empty:
+        return archive
+    cle = ["sport", "date", "dom", "ext"]
+    if archive.empty:
+        return nouvelles.copy()
+    tout = pd.concat([archive, nouvelles], ignore_index=True)
+    return (tout.sort_values("releve_utc").drop_duplicates(cle, keep="last")
+            .sort_values(["sport", "date", "dom"]).reset_index(drop=True))

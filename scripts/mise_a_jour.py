@@ -5,6 +5,7 @@ Met à jour toutes les données de l'application. Lancé chaque jour par la GitH
     python scripts/mise_a_jour.py              # foot + NBA
     python scripts/mise_a_jour.py --foot       # foot seulement
     python scripts/mise_a_jour.py --nba        # NBA seulement
+    python scripts/mise_a_jour.py --cotes      # cotes seulement (secret ODDS_API_KEY)
 
 Option : définir la variable d'environnement FOOTBALL_DATA_API_KEY (clé gratuite sur
 football-data.org) pour compléter les résultats d'openfootball, parfois en retard.
@@ -23,6 +24,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from sources import (  # noqa: E402
+    ODDS_SPORTS, URL_ODDS, analyser_cotes, fusionner_cotes, telecharger_json_avec_quota,
     DATA, LIGUES, URL_ESPN_NBA, URL_FDORG, URL_HISTO_FOOT, URL_OPENFOOTBALL, analyser_fdorg, analyser_openfootball,
     charger_correspondance, fusionner_resultats, recuperer_espn, saison_courte, saison_foot, telecharger,
 )
@@ -118,6 +120,42 @@ def maj_nba(etat: dict, jours_avant: int = 14) -> None:
     print("nba :", rapport)
 
 
+def maj_cotes(etat: dict) -> None:
+    """Cotes 1N2 des prochains matchs (The Odds API, offre gratuite : 500 crédits/mois,
+    1 crédit par championnat et par mise à jour). Chaque relevé est archivé : c'est cet
+    historique qui permet de comparer le modèle au marché dans l'onglet Fiabilité."""
+    cle_api = os.environ.get("ODDS_API_KEY")
+    if not cle_api:
+        etat["cotes"] = {"statut": "désactivé", "detail": "secret ODDS_API_KEY absent"}
+        print("cotes : pas de clé ODDS_API_KEY, étape ignorée")
+        return
+    corr = charger_correspondance()
+    f = DATA / "cotes" / "cotes.csv"
+    f.parent.mkdir(exist_ok=True)
+    archive = pd.read_csv(f) if f.exists() else pd.DataFrame()
+    maintenant_utc = datetime.now(timezone.utc)
+    rapport = {"heure": maintenant()}
+    for ligue, sport in ODDS_SPORTS.items():
+        try:
+            candidats = None
+            if ligue != "nba":
+                cal = sorted((DATA / "foot" / "openfootball").glob(f"{ligue}_*_calendrier.csv"))
+                candidats = set(pd.read_csv(cal[-1])["HomeTeam"]) if cal else set()
+            brut, restant = telecharger_json_avec_quota(URL_ODDS.format(sport=sport, cle=cle_api))
+            nouv, inconnus = analyser_cotes(brut, ligue, candidats, corr, releve=maintenant())
+            archive = fusionner_cotes(archive, nouv, maintenant_utc)
+            rapport[ligue] = {"statut": "ok", "matchs_cotes": len(nouv), "noms_non_associes": sorted(set(inconnus))}
+            rapport["credits_restants"] = restant
+        except Exception as e:  # noqa: BLE001
+            rapport[ligue] = {"statut": "erreur", "erreur": str(e)[:200]}
+    if not archive.empty:
+        archive.to_csv(f, index=False)
+    rapport["matchs_archives"] = len(archive)
+    rapport["statut"] = "ok" if any(isinstance(v, dict) and v.get("statut") == "ok" for v in rapport.values()) else "erreur"
+    etat["cotes"] = rapport
+    print("cotes :", rapport)
+
+
 def maintenant() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -126,13 +164,16 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--foot", action="store_true")
     ap.add_argument("--nba", action="store_true")
+    ap.add_argument("--cotes", action="store_true")
     args = ap.parse_args()
-    tout = not (args.foot or args.nba)
+    tout = not (args.foot or args.nba or args.cotes)
     etat = lire_etat()
     if args.foot or tout:
         maj_foot(etat)
     if args.nba or tout:
         maj_nba(etat)
+    if args.cotes or tout:
+        maj_cotes(etat)   # après le foot : il a besoin du calendrier à jour
     etat["derniere_execution"] = maintenant()
     ETAT.write_text(json.dumps(etat, indent=2, ensure_ascii=False, default=str))
     statuts = [v.get("statut") for v in etat.get("foot", {}).values()] + [etat.get("nba", {}).get("statut")]

@@ -15,7 +15,11 @@ Ligue 1 et NBA. Les données se mettent à jour toutes seules deux fois par jour
 | Simulateur | n'importe quelle affiche, grille des scores exacts, comparaison avec des cotes | idem, avec option terrain neutre |
 | Forces / Classement | attaque et défense de chaque équipe | notes Elo des 30 franchises |
 | Bilan de la saison | pronostics d'avant-match comparés aux vrais résultats | idem |
-| Fiabilité | backtest sur 10 saisons, calibration | backtest depuis 2005 |
+| Fiabilité | backtest sur 10 saisons, calibration, bilan face au marché | backtest depuis 2005, bilan face au marché |
+
+Avec la clé The Odds API, l'onglet « Prochains matchs » propose trois jeux de probabilités :
+**Modèle** (notre calcul), **Marché** (cotes moyennes des bookmakers, marge retirée) et
+**Combiné** (mélange des deux, dont le poids est réglé automatiquement sur les matchs archivés).
 
 ## Comment les données restent à jour
 
@@ -23,6 +27,7 @@ Ligue 1 et NBA. Les données se mettent à jour toutes seules deux fois par jour
 GitHub Action (06h et 18h UTC)
    ├─ openfootball (GitHub)        → résultats + calendrier foot de la saison en cours
    ├─ football-data.org (option)   → résultats foot plus frais
+   ├─ The Odds API (option)        → cotes 1N2 des prochains matchs, archivées
    └─ API ESPN                     → résultats + calendrier NBA
         ↓  commit des fichiers dans data/
 Streamlit Community Cloud redémarre l'app → nouvelles probabilités
@@ -76,6 +81,19 @@ Les suivants prennent moins d'une minute.
 2. GitHub : **Settings → Secrets and variables → Actions → New repository secret**,
    nom `FOOTBALL_DATA_API_KEY`, valeur : ta clé.
 
+### 4 bis. (Facultatif) Cotes des bookmakers : clé The Odds API
+
+1. Crée un compte gratuit sur the-odds-api.com (offre gratuite : 500 crédits par mois).
+2. Ajoute le secret `ODDS_API_KEY` comme à l'étape 4.
+
+Chaque mise à jour consomme 1 crédit par championnat (4 en tout), soit environ 250 crédits par
+mois avec deux mises à jour par jour : on reste dans l'offre gratuite. Évite de multiplier les
+lancements manuels. Le nombre de crédits restants s'affiche dans la barre latérale de l'app.
+
+L'offre gratuite ne donne pas l'historique des cotes : l'app **archive elle-même** chaque relevé
+(`data/cotes/cotes.csv`). Seules les cotes relevées avant le coup d'envoi sont gardées. Cet
+archivage alimente, dans l'onglet Fiabilité, le bilan « modèle face au marché ».
+
 ### 5. Publier l'app sur Streamlit Community Cloud
 
 1. Va sur share.streamlit.io et connecte-toi avec ton compte GitHub.
@@ -112,7 +130,8 @@ app.py                         l'application Streamlit
 src/
   foot_poisson.py              modèle foot (Poisson + Dixon-Coles, pondération temporelle)
   basket_elo.py                modèle NBA (Elo avec marge de victoire)
-  sources.py                   téléchargement et lecture des sources (openfootball, ESPN…)
+  sources.py                   téléchargement et lecture des sources (openfootball, ESPN, cotes…)
+  marche.py                    probabilités du marché, combinaison et bilan modèle vs marché
   donnees.py                   assemblage historique + saison en cours
   metriques.py                 précision, log loss, Brier, RPS, calibration
 scripts/
@@ -125,6 +144,7 @@ data/
   foot/correspondance_equipes.csv
   nba/historique_538.csv.gz    NBA 1947 → 2015 (FiveThirtyEight)
   nba/espn_matchs.csv          NBA depuis 2015/16 (créé par la première mise à jour)
+  cotes/cotes.csv              cotes d'avant-match archivées (créé avec la clé The Odds API)
   derniere_mise_a_jour.json    état de la dernière mise à jour (affiché dans l'app)
 resultats/                     tableaux de l'onglet Fiabilité
 tests/                         tests des parseurs avec des échantillons de réponses

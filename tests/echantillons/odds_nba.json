@@ -1,0 +1,7 @@
+[
+  {"id": "n1", "sport_key": "basketball_nba", "commence_time": "2026-10-21T23:30:00Z",
+   "home_team": "Philadelphia 76ers", "away_team": "Portland Trail Blazers",
+   "bookmakers": [{"key": "pinnacle", "title": "Pinnacle", "last_update": "2026-10-20T06:00:00Z",
+      "markets": [{"key": "h2h", "outcomes": [
+        {"name": "Philadelphia 76ers", "price": 1.50}, {"name": "Portland Trail Blazers", "price": 2.70}]}]}]}
+]
