@@ -1,0 +1,29 @@
+{
+  "competition": {"code": "FL1", "name": "Ligue 1"},
+  "matches": [
+    {
+      "utcDate": "2026-08-21T18:45:00Z",
+      "status": "FINISHED",
+      "matchday": 1,
+      "homeTeam": {"name": "Olympique de Marseille", "shortName": "Marseille", "tla": "MAR"},
+      "awayTeam": {"name": "RC Strasbourg Alsace", "shortName": "Strasbourg", "tla": "RCS"},
+      "score": {"winner": "HOME_TEAM", "fullTime": {"home": 4, "away": 0}, "halfTime": {"home": 0, "away": 0}}
+    },
+    {
+      "utcDate": "2026-09-27T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 6,
+      "homeTeam": {"name": "Paris Saint-Germain FC", "shortName": "PSG", "tla": "PSG"},
+      "awayTeam": {"name": "Le Mans FC", "shortName": "Le Mans", "tla": "LMA"},
+      "score": {"winner": "HOME_TEAM", "fullTime": {"home": 3, "away": 1}, "halfTime": {"home": 1, "away": 0}}
+    },
+    {
+      "utcDate": "2026-10-18T15:15:00Z",
+      "status": "TIMED",
+      "matchday": 7,
+      "homeTeam": {"name": "Paris FC", "shortName": "Paris FC", "tla": "PFC"},
+      "awayTeam": {"name": "Stade Rennais FC 1901", "shortName": "Rennes", "tla": "REN"},
+      "score": {"winner": null, "fullTime": {"home": null, "away": null}, "halfTime": {"home": null, "away": null}}
+    }
+  ]
+}

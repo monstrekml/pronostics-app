@@ -1,0 +1,63 @@
+{
+ "name": "French Ligue 1 2026/27",
+ "matches": [
+  {
+   "round": "Matchday 1",
+   "date": "2026-08-21",
+   "time": "20:45",
+   "team1": "Olympique de Marseille",
+   "team2": "RC Strasbourg Alsace",
+   "score": {
+    "ht": [
+     0,
+     0
+    ],
+    "ft": [
+     4,
+     0
+    ]
+   }
+  },
+  {
+   "round": "Matchday 1",
+   "date": "2026-08-22",
+   "time": "17:15",
+   "team1": "Racing Club de Lens",
+   "team2": "AJ Auxerre",
+   "score": {
+    "ht": [
+     1,
+     0
+    ],
+    "ft": [
+     5,
+     2
+    ]
+   }
+  },
+  {
+   "round": "Matchday 1",
+   "date": "2026-08-22",
+   "time": "20:45",
+   "team1": "Le Mans FC",
+   "team2": "Stade Brestois 29",
+   "score": {
+    "ht": [
+     1,
+     1
+    ],
+    "ft": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "round": "Matchday 7",
+   "date": "2026-10-18",
+   "time": "17:15",
+   "team1": "Paris FC",
+   "team2": "Stade Rennais FC 1901"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "foot": {
+    "premier-league": {
+      "heure": "2026-10-04T20:19:03Z",
+      "source_resultats": "openfootball",
+      "matchs_joues": 45,
+      "matchs_au_calendrier": 380,
+      "dernier_resultat": "2026-09-20",
+      "statut": "ok"
+    },
+    "la-liga": {
+      "heure": "2026-10-04T20:19:04Z",
+      "source_resultats": "openfootball",
+      "matchs_joues": 64,
+      "matchs_au_calendrier": 380,
+      "dernier_resultat": "2026-09-20",
+      "statut": "ok"
+    },
+    "ligue-1": {
+      "heure": "2026-10-04T20:19:04Z",
+      "source_resultats": "openfootball",
+      "matchs_joues": 41,
+      "matchs_au_calendrier": 306,
+      "dernier_resultat": "2026-09-20",
+      "statut": "ok"
+    }
+  },
+  "derniere_execution": "2026-10-04T20:20:14Z"
+}

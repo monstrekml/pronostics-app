@@ -1,0 +1,72 @@
+{
+  "leagues": [{"abbreviation": "NBA"}],
+  "events": [
+    {
+      "id": "401810001",
+      "date": "2026-04-15T23:30Z",
+      "season": {"year": 2026, "type": 5, "slug": "play-in-season"},
+      "competitions": [{
+        "neutralSite": false,
+        "status": {"type": {"completed": true, "state": "post"}},
+        "competitors": [
+          {"homeAway": "home", "score": "109", "winner": true,
+           "team": {"name": "76ers", "displayName": "Philadelphia 76ers", "abbreviation": "PHI", "shortDisplayName": "76ers"}},
+          {"homeAway": "away", "score": "97", "winner": false,
+           "team": {"name": "Magic", "displayName": "Orlando Magic", "abbreviation": "ORL", "shortDisplayName": "Magic"}}
+        ]
+      }]
+    },
+    {
+      "id": "401810002",
+      "date": "2026-04-16T02:00Z",
+      "season": {"year": 2026, "type": 3, "slug": "post-season"},
+      "competitions": [{
+        "neutralSite": false,
+        "status": {"type": {"completed": true, "state": "post"}},
+        "competitors": [
+          {"homeAway": "home", "score": "121", "winner": false,
+           "team": {"name": "Clippers", "displayName": "LA Clippers", "abbreviation": "LAC"}},
+          {"homeAway": "away", "score": "126", "winner": true,
+           "team": {"name": "Warriors", "displayName": "Golden State Warriors", "abbreviation": "GS"}}
+        ]
+      }]
+    },
+    {
+      "id": "401810003",
+      "date": "2026-10-21T00:00Z",
+      "season": {"year": 2027, "type": 2, "slug": "regular-season"},
+      "competitions": [{
+        "neutralSite": true,
+        "status": {"type": {"completed": false, "state": "pre"}},
+        "competitors": [
+          {"homeAway": "home", "score": "0", "team": {"name": "Trail Blazers", "displayName": "Portland Trail Blazers"}},
+          {"homeAway": "away", "score": "0", "team": {"name": "Spurs", "displayName": "San Antonio Spurs"}}
+        ]
+      }]
+    },
+    {
+      "id": "401810004",
+      "date": "2026-10-10T00:00Z",
+      "season": {"year": 2027, "type": 1, "slug": "preseason"},
+      "competitions": [{
+        "status": {"type": {"completed": true, "state": "post"}},
+        "competitors": [
+          {"homeAway": "home", "score": "110", "team": {"name": "Lakers"}},
+          {"homeAway": "away", "score": "100", "team": {"name": "Celtics"}}
+        ]
+      }]
+    },
+    {
+      "id": "401810005",
+      "date": "2026-02-15T01:00Z",
+      "season": {"year": 2026, "type": 2, "slug": "regular-season"},
+      "competitions": [{
+        "status": {"type": {"completed": true, "state": "post"}},
+        "competitors": [
+          {"homeAway": "home", "score": "180", "team": {"name": "Team LeBron"}},
+          {"homeAway": "away", "score": "175", "team": {"name": "Team Giannis"}}
+        ]
+      }]
+    }
+  ]
+}
