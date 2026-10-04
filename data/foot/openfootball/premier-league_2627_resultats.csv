@@ -25,6 +25,8 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG
 2026-09-05,Brighton,Leeds,1,1
 2026-09-05,Brentford,Sunderland,1,1
 2026-09-05,Fulham,Crystal Palace,2,3
+2026-09-05,Nott'm Forest,Tottenham,0,0
+2026-09-05,Hull,Aston Villa,0,0
 2026-09-06,Everton,Man United,2,2
 2026-09-06,Arsenal,Chelsea,2,1
 2026-09-12,Crystal Palace,Ipswich,2,3
@@ -32,6 +34,8 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG
 2026-09-12,Bournemouth,Brentford,2,2
 2026-09-12,Chelsea,Hull,2,2
 2026-09-12,Sunderland,Arsenal,0,2
+2026-09-12,Liverpool,Fulham,0,0
+2026-09-12,Tottenham,Everton,0,0
 2026-09-13,Coventry,Brighton,0,5
 2026-09-13,Man United,Man City,0,1
 2026-09-14,Leeds,Newcastle,4,1
@@ -44,3 +48,4 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG
 2026-09-20,Bournemouth,Liverpool,0,1
 2026-09-20,Man City,Sunderland,5,3
 2026-09-20,Fulham,Man United,1,1
+2026-09-20,Leeds,Crystal Palace,0,0

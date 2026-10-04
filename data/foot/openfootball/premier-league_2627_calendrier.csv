@@ -1,381 +1,381 @@
 Date,Heure,Journee,HomeTeam,AwayTeam
-2026-08-21,20:00,Matchday 1,Arsenal,Coventry
-2026-08-22,12:30,Matchday 1,Hull,Man United
-2026-08-22,15:00,Matchday 1,Ipswich,Sunderland
-2026-08-22,15:00,Matchday 1,Nott'm Forest,Leeds
-2026-08-22,15:00,Matchday 1,Everton,Crystal Palace
-2026-08-22,17:30,Matchday 1,Brentford,Tottenham
-2026-08-23,14:00,Matchday 1,Man City,Bournemouth
-2026-08-23,14:00,Matchday 1,Brighton,Aston Villa
-2026-08-23,16:30,Matchday 1,Newcastle,Liverpool
-2026-08-24,20:00,Matchday 1,Fulham,Chelsea
-2026-08-28,20:00,Matchday 2,Crystal Palace,Man City
-2026-08-29,12:30,Matchday 2,Liverpool,Nott'm Forest
-2026-08-29,15:00,Matchday 2,Bournemouth,Everton
-2026-08-29,15:00,Matchday 2,Coventry,Hull
-2026-08-29,17:30,Matchday 2,Tottenham,Newcastle
-2026-08-30,14:00,Matchday 2,Sunderland,Fulham
-2026-08-30,14:00,Matchday 2,Chelsea,Brighton
-2026-08-30,14:00,Matchday 2,Leeds,Brentford
-2026-08-30,16:30,Matchday 2,Man United,Ipswich
-2026-08-31,20:00,Matchday 2,Aston Villa,Arsenal
-2026-09-04,20:00,Matchday 3,Ipswich,Liverpool
-2026-09-05,12:30,Matchday 3,Newcastle,Bournemouth
-2026-09-05,15:00,Matchday 3,Nott'm Forest,Tottenham
-2026-09-05,15:00,Matchday 3,Man City,Coventry
-2026-09-05,15:00,Matchday 3,Brighton,Leeds
-2026-09-05,15:00,Matchday 3,Brentford,Sunderland
-2026-09-05,15:00,Matchday 3,Fulham,Crystal Palace
-2026-09-05,17:30,Matchday 3,Hull,Aston Villa
-2026-09-06,14:00,Matchday 3,Everton,Man United
-2026-09-06,16:30,Matchday 3,Arsenal,Chelsea
-2026-09-12,15:00,Matchday 4,Crystal Palace,Ipswich
-2026-09-12,15:00,Matchday 4,Liverpool,Fulham
-2026-09-12,15:00,Matchday 4,Aston Villa,Nott'm Forest
-2026-09-12,15:00,Matchday 4,Bournemouth,Brentford
-2026-09-12,15:00,Matchday 4,Chelsea,Hull
-2026-09-12,17:30,Matchday 4,Tottenham,Everton
-2026-09-12,20:00,Matchday 4,Sunderland,Arsenal
-2026-09-13,14:00,Matchday 4,Coventry,Brighton
-2026-09-13,16:30,Matchday 4,Man United,Man City
-2026-09-14,20:00,Matchday 4,Leeds,Newcastle
-2026-09-18,20:00,Matchday 5,Brentford,Chelsea
-2026-09-19,12:30,Matchday 5,Tottenham,Aston Villa
-2026-09-19,15:00,Matchday 5,Everton,Ipswich
-2026-09-19,15:00,Matchday 5,Brighton,Arsenal
-2026-09-19,15:00,Matchday 5,Newcastle,Hull
-2026-09-19,17:30,Matchday 5,Nott'm Forest,Coventry
-2026-09-20,14:00,Matchday 5,Bournemouth,Liverpool
-2026-09-20,14:00,Matchday 5,Leeds,Crystal Palace
-2026-09-20,14:00,Matchday 5,Man City,Sunderland
-2026-09-20,16:30,Matchday 5,Fulham,Man United
-2026-10-10,12:30,Matchday 6,Arsenal,Leeds
-2026-10-10,15:00,Matchday 6,Sunderland,Brighton
-2026-10-10,15:00,Matchday 6,Chelsea,Bournemouth
-2026-10-10,15:00,Matchday 6,Ipswich,Fulham
-2026-10-10,15:00,Matchday 6,Aston Villa,Brentford
-2026-10-10,17:30,Matchday 6,Man United,Tottenham
-2026-10-11,14:00,Matchday 6,Hull,Everton
-2026-10-11,14:00,Matchday 6,Crystal Palace,Nott'm Forest
-2026-10-11,16:30,Matchday 6,Liverpool,Man City
-2026-10-12,20:00,Matchday 6,Coventry,Newcastle
-2026-10-17,12:30,Matchday 7,Everton,Chelsea
-2026-10-17,15:00,Matchday 7,Fulham,Hull
-2026-10-17,15:00,Matchday 7,Man City,Ipswich
-2026-10-17,15:00,Matchday 7,Brentford,Liverpool
-2026-10-17,17:30,Matchday 7,Newcastle,Aston Villa
-2026-10-18,14:00,Matchday 7,Bournemouth,Sunderland
-2026-10-18,14:00,Matchday 7,Leeds,Man United
-2026-10-18,14:00,Matchday 7,Brighton,Crystal Palace
-2026-10-18,16:30,Matchday 7,Nott'm Forest,Arsenal
-2026-10-19,20:00,Matchday 7,Tottenham,Coventry
-2026-10-23,20:00,Matchday 8,Ipswich,Nott'm Forest
-2026-10-24,12:30,Matchday 8,Aston Villa,Man City
-2026-10-24,15:00,Matchday 8,Arsenal,Everton
-2026-10-24,15:00,Matchday 8,Coventry,Fulham
-2026-10-24,17:30,Matchday 8,Chelsea,Tottenham
-2026-10-25,14:00,Matchday 8,Liverpool,Brighton
-2026-10-25,14:00,Matchday 8,Crystal Palace,Newcastle
-2026-10-25,14:00,Matchday 8,Man United,Bournemouth
-2026-10-25,14:00,Matchday 8,Hull,Brentford
-2026-10-25,16:30,Matchday 8,Sunderland,Leeds
-2026-10-31,12:30,Matchday 9,Chelsea,Man United
-2026-10-31,15:00,Matchday 9,Man City,Brighton
-2026-10-31,15:00,Matchday 9,Bournemouth,Leeds
-2026-10-31,15:00,Matchday 9,Coventry,Sunderland
-2026-10-31,15:00,Matchday 9,Hull,Ipswich
-2026-10-31,15:00,Matchday 9,Brentford,Nott'm Forest
-2026-10-31,17:30,Matchday 9,Tottenham,Crystal Palace
-2026-10-31,20:00,Matchday 9,Aston Villa,Fulham
-2026-11-01,16:30,Matchday 9,Liverpool,Arsenal
-2026-11-02,20:00,Matchday 9,Newcastle,Everton
-2026-11-07,15:00,Matchday 10,Arsenal,Hull
-2026-11-07,15:00,Matchday 10,Nott'm Forest,Man City
-2026-11-07,15:00,Matchday 10,Leeds,Tottenham
-2026-11-07,15:00,Matchday 10,Fulham,Newcastle
-2026-11-07,15:00,Matchday 10,Everton,Coventry
-2026-11-07,15:00,Matchday 10,Crystal Palace,Liverpool
-2026-11-07,15:00,Matchday 10,Sunderland,Chelsea
-2026-11-07,15:00,Matchday 10,Ipswich,Bournemouth
-2026-11-07,15:00,Matchday 10,Brighton,Brentford
-2026-11-07,15:00,Matchday 10,Man United,Aston Villa
-2026-11-21,15:00,Matchday 11,Chelsea,Leeds
-2026-11-21,15:00,Matchday 11,Man City,Fulham
-2026-11-21,15:00,Matchday 11,Aston Villa,Sunderland
-2026-11-21,15:00,Matchday 11,Liverpool,Man United
-2026-11-21,15:00,Matchday 11,Hull,Brighton
-2026-11-21,15:00,Matchday 11,Bournemouth,Nott'm Forest
-2026-11-21,15:00,Matchday 11,Tottenham,Ipswich
-2026-11-21,15:00,Matchday 11,Brentford,Everton
-2026-11-21,15:00,Matchday 11,Coventry,Crystal Palace
-2026-11-21,15:00,Matchday 11,Newcastle,Arsenal
-2026-11-28,15:00,Matchday 12,Leeds,Coventry
-2026-11-28,15:00,Matchday 12,Ipswich,Aston Villa
-2026-11-28,15:00,Matchday 12,Arsenal,Man City
-2026-11-28,15:00,Matchday 12,Man United,Brentford
-2026-11-28,15:00,Matchday 12,Everton,Liverpool
-2026-11-28,15:00,Matchday 12,Fulham,Bournemouth
-2026-11-28,15:00,Matchday 12,Nott'm Forest,Chelsea
-2026-11-28,15:00,Matchday 12,Brighton,Newcastle
-2026-11-28,15:00,Matchday 12,Sunderland,Tottenham
-2026-11-28,15:00,Matchday 12,Crystal Palace,Hull
-2026-12-02,20:00,Matchday 13,Tottenham,Fulham
-2026-12-02,20:00,Matchday 13,Liverpool,Sunderland
-2026-12-02,20:00,Matchday 13,Hull,Nott'm Forest
-2026-12-02,20:00,Matchday 13,Chelsea,Crystal Palace
-2026-12-02,20:00,Matchday 13,Aston Villa,Everton
-2026-12-02,20:00,Matchday 13,Brentford,Arsenal
-2026-12-02,20:00,Matchday 13,Coventry,Ipswich
-2026-12-02,20:00,Matchday 13,Man City,Leeds
-2026-12-02,20:00,Matchday 13,Newcastle,Man United
-2026-12-02,20:00,Matchday 13,Bournemouth,Brighton
-2026-12-05,15:00,Matchday 14,Tottenham,Arsenal
-2026-12-05,15:00,Matchday 14,Man United,Coventry
-2026-12-05,15:00,Matchday 14,Leeds,Ipswich
-2026-12-05,15:00,Matchday 14,Newcastle,Sunderland
-2026-12-05,15:00,Matchday 14,Chelsea,Liverpool
-2026-12-05,15:00,Matchday 14,Brentford,Man City
-2026-12-05,15:00,Matchday 14,Bournemouth,Hull
-2026-12-05,15:00,Matchday 14,Aston Villa,Crystal Palace
-2026-12-05,15:00,Matchday 14,Nott'm Forest,Brighton
-2026-12-05,15:00,Matchday 14,Everton,Fulham
-2026-12-12,15:00,Matchday 15,Sunderland,Nott'm Forest
-2026-12-12,15:00,Matchday 15,Crystal Palace,Man United
-2026-12-12,15:00,Matchday 15,Hull,Tottenham
-2026-12-12,15:00,Matchday 15,Brighton,Everton
-2026-12-12,15:00,Matchday 15,Ipswich,Newcastle
-2026-12-12,15:00,Matchday 15,Coventry,Aston Villa
-2026-12-12,15:00,Matchday 15,Arsenal,Bournemouth
-2026-12-12,15:00,Matchday 15,Man City,Chelsea
-2026-12-12,15:00,Matchday 15,Liverpool,Leeds
-2026-12-12,15:00,Matchday 15,Fulham,Brentford
-2026-12-19,15:00,Matchday 16,Leeds,Fulham
-2026-12-19,15:00,Matchday 16,Brighton,Ipswich
-2026-12-19,15:00,Matchday 16,Nott'm Forest,Everton
-2026-12-19,15:00,Matchday 16,Brentford,Newcastle
-2026-12-19,15:00,Matchday 16,Man City,Hull
-2026-12-19,15:00,Matchday 16,Sunderland,Crystal Palace
-2026-12-19,15:00,Matchday 16,Bournemouth,Coventry
-2026-12-19,15:00,Matchday 16,Arsenal,Man United
-2026-12-19,15:00,Matchday 16,Liverpool,Tottenham
-2026-12-19,15:00,Matchday 16,Chelsea,Aston Villa
-2026-12-26,12:30,Matchday 17,Aston Villa,Leeds
-2026-12-26,15:00,Matchday 17,Everton,Sunderland
-2026-12-26,15:00,Matchday 17,Fulham,Brighton
-2026-12-26,15:00,Matchday 17,Tottenham,Bournemouth
-2026-12-26,15:00,Matchday 17,Ipswich,Brentford
-2026-12-26,17:30,Matchday 17,Hull,Liverpool
-2026-12-26,20:00,Matchday 17,Newcastle,Man City
-2026-12-27,14:00,Matchday 17,Coventry,Chelsea
-2026-12-27,16:30,Matchday 17,Man United,Nott'm Forest
-2026-12-27,19:00,Matchday 17,Crystal Palace,Arsenal
-2026-12-29,19:30,Matchday 18,Hull,Leeds
-2026-12-29,19:30,Matchday 18,Tottenham,Brighton
-2026-12-29,20:15,Matchday 18,Everton,Man City
-2026-12-30,19:30,Matchday 18,Fulham,Arsenal
-2026-12-30,19:30,Matchday 18,Coventry,Brentford
-2026-12-30,19:30,Matchday 18,Newcastle,Nott'm Forest
-2026-12-30,19:30,Matchday 18,Man United,Sunderland
-2026-12-30,19:30,Matchday 18,Crystal Palace,Bournemouth
-2026-12-30,20:15,Matchday 18,Aston Villa,Liverpool
-2026-12-30,20:15,Matchday 18,Ipswich,Chelsea
-2027-01-01,20:00,Matchday 19,Leeds,Everton
-2027-01-02,12:30,Matchday 19,Brighton,Man United
-2027-01-02,15:00,Matchday 19,Brentford,Crystal Palace
-2027-01-02,15:00,Matchday 19,Arsenal,Ipswich
-2027-01-02,15:00,Matchday 19,Sunderland,Hull
-2027-01-02,15:00,Matchday 19,Liverpool,Coventry
-2027-01-02,15:00,Matchday 19,Nott'm Forest,Fulham
-2027-01-02,17:30,Matchday 19,Bournemouth,Aston Villa
-2027-01-03,14:00,Matchday 19,Chelsea,Newcastle
-2027-01-03,16:30,Matchday 19,Man City,Tottenham
-2027-01-05,19:30,Matchday 20,Arsenal,Brentford
-2027-01-05,19:30,Matchday 20,Brighton,Bournemouth
-2027-01-05,19:30,Matchday 20,Nott'm Forest,Hull
-2027-01-05,19:30,Matchday 20,Everton,Aston Villa
-2027-01-05,20:15,Matchday 20,Sunderland,Liverpool
-2027-01-06,19:30,Matchday 20,Fulham,Tottenham
-2027-01-06,19:30,Matchday 20,Crystal Palace,Chelsea
-2027-01-06,19:30,Matchday 20,Ipswich,Coventry
-2027-01-06,20:15,Matchday 20,Leeds,Man City
-2027-01-07,20:00,Matchday 20,Man United,Newcastle
-2027-01-16,15:00,Matchday 21,Bournemouth,Ipswich
-2027-01-16,15:00,Matchday 21,Man City,Nott'm Forest
-2027-01-16,15:00,Matchday 21,Chelsea,Sunderland
-2027-01-16,15:00,Matchday 21,Brentford,Brighton
-2027-01-16,15:00,Matchday 21,Aston Villa,Man United
-2027-01-16,15:00,Matchday 21,Tottenham,Leeds
-2027-01-16,15:00,Matchday 21,Coventry,Everton
-2027-01-16,15:00,Matchday 21,Liverpool,Crystal Palace
-2027-01-16,15:00,Matchday 21,Hull,Arsenal
-2027-01-16,15:00,Matchday 21,Newcastle,Fulham
-2027-01-23,15:00,Matchday 22,Ipswich,Hull
-2027-01-23,15:00,Matchday 22,Everton,Brentford
-2027-01-23,15:00,Matchday 22,Sunderland,Coventry
-2027-01-23,15:00,Matchday 22,Nott'm Forest,Bournemouth
-2027-01-23,15:00,Matchday 22,Arsenal,Newcastle
-2027-01-23,15:00,Matchday 22,Leeds,Chelsea
-2027-01-23,15:00,Matchday 22,Fulham,Aston Villa
-2027-01-23,15:00,Matchday 22,Man United,Liverpool
-2027-01-23,15:00,Matchday 22,Brighton,Man City
-2027-01-23,15:00,Matchday 22,Crystal Palace,Tottenham
-2027-01-30,15:00,Matchday 23,Tottenham,Sunderland
-2027-01-30,15:00,Matchday 23,Brentford,Man United
-2027-01-30,15:00,Matchday 23,Newcastle,Brighton
-2027-01-30,15:00,Matchday 23,Hull,Crystal Palace
-2027-01-30,15:00,Matchday 23,Coventry,Leeds
-2027-01-30,15:00,Matchday 23,Bournemouth,Fulham
-2027-01-30,15:00,Matchday 23,Chelsea,Nott'm Forest
-2027-01-30,15:00,Matchday 23,Liverpool,Everton
-2027-01-30,15:00,Matchday 23,Man City,Arsenal
-2027-01-30,15:00,Matchday 23,Aston Villa,Ipswich
-2027-02-06,15:00,Matchday 24,Arsenal,Liverpool
-2027-02-06,15:00,Matchday 24,Brighton,Hull
-2027-02-06,15:00,Matchday 24,Sunderland,Aston Villa
-2027-02-06,15:00,Matchday 24,Crystal Palace,Coventry
-2027-02-06,15:00,Matchday 24,Ipswich,Tottenham
-2027-02-06,15:00,Matchday 24,Everton,Newcastle
-2027-02-06,15:00,Matchday 24,Fulham,Man City
-2027-02-06,15:00,Matchday 24,Leeds,Bournemouth
-2027-02-06,15:00,Matchday 24,Man United,Chelsea
-2027-02-06,15:00,Matchday 24,Nott'm Forest,Brentford
-2027-02-10,20:00,Matchday 25,Everton,Leeds
-2027-02-10,20:00,Matchday 25,Coventry,Liverpool
-2027-02-10,20:00,Matchday 25,Hull,Sunderland
-2027-02-10,20:00,Matchday 25,Aston Villa,Bournemouth
-2027-02-10,20:00,Matchday 25,Crystal Palace,Brentford
-2027-02-10,20:00,Matchday 25,Newcastle,Chelsea
-2027-02-10,20:00,Matchday 25,Fulham,Nott'm Forest
-2027-02-10,20:00,Matchday 25,Tottenham,Man City
-2027-02-10,20:00,Matchday 25,Man United,Brighton
-2027-02-10,20:00,Matchday 25,Ipswich,Arsenal
-2027-02-20,15:00,Matchday 26,Man City,Newcastle
-2027-02-20,15:00,Matchday 26,Bournemouth,Crystal Palace
-2027-02-20,15:00,Matchday 26,Brentford,Coventry
-2027-02-20,15:00,Matchday 26,Chelsea,Ipswich
-2027-02-20,15:00,Matchday 26,Liverpool,Hull
-2027-02-20,15:00,Matchday 26,Arsenal,Fulham
-2027-02-20,15:00,Matchday 26,Nott'm Forest,Man United
-2027-02-20,15:00,Matchday 26,Brighton,Tottenham
-2027-02-20,15:00,Matchday 26,Sunderland,Everton
-2027-02-20,15:00,Matchday 26,Leeds,Aston Villa
-2027-02-27,15:00,Matchday 27,Crystal Palace,Sunderland
-2027-02-27,15:00,Matchday 27,Man United,Arsenal
-2027-02-27,15:00,Matchday 27,Ipswich,Brighton
-2027-02-27,15:00,Matchday 27,Coventry,Bournemouth
-2027-02-27,15:00,Matchday 27,Everton,Nott'm Forest
-2027-02-27,15:00,Matchday 27,Fulham,Leeds
-2027-02-27,15:00,Matchday 27,Aston Villa,Chelsea
-2027-02-27,15:00,Matchday 27,Tottenham,Liverpool
-2027-02-27,15:00,Matchday 27,Newcastle,Brentford
-2027-02-27,15:00,Matchday 27,Hull,Man City
-2027-03-03,20:00,Matchday 28,Nott'm Forest,Newcastle
-2027-03-03,20:00,Matchday 28,Bournemouth,Tottenham
-2027-03-03,20:00,Matchday 28,Man City,Everton
-2027-03-03,20:00,Matchday 28,Arsenal,Crystal Palace
-2027-03-03,20:00,Matchday 28,Leeds,Hull
-2027-03-03,20:00,Matchday 28,Sunderland,Man United
-2027-03-03,20:00,Matchday 28,Liverpool,Aston Villa
-2027-03-03,20:00,Matchday 28,Brighton,Fulham
-2027-03-03,20:00,Matchday 28,Brentford,Ipswich
-2027-03-03,20:00,Matchday 28,Chelsea,Coventry
-2027-03-13,15:00,Matchday 29,Leeds,Brighton
-2027-03-13,15:00,Matchday 29,Tottenham,Nott'm Forest
-2027-03-13,15:00,Matchday 29,Crystal Palace,Fulham
-2027-03-13,15:00,Matchday 29,Liverpool,Ipswich
-2027-03-13,15:00,Matchday 29,Coventry,Man City
-2027-03-13,15:00,Matchday 29,Bournemouth,Newcastle
-2027-03-13,15:00,Matchday 29,Chelsea,Arsenal
-2027-03-13,15:00,Matchday 29,Aston Villa,Hull
-2027-03-13,15:00,Matchday 29,Man United,Everton
-2027-03-13,15:00,Matchday 29,Sunderland,Brentford
-2027-03-20,15:00,Matchday 30,Brentford,Bournemouth
-2027-03-20,15:00,Matchday 30,Brighton,Coventry
-2027-03-20,15:00,Matchday 30,Man City,Man United
-2027-03-20,15:00,Matchday 30,Ipswich,Crystal Palace
-2027-03-20,15:00,Matchday 30,Arsenal,Sunderland
-2027-03-20,15:00,Matchday 30,Fulham,Liverpool
-2027-03-20,15:00,Matchday 30,Hull,Chelsea
-2027-03-20,15:00,Matchday 30,Nott'm Forest,Aston Villa
-2027-03-20,15:00,Matchday 30,Everton,Tottenham
-2027-03-20,15:00,Matchday 30,Newcastle,Leeds
-2027-04-10,15:00,Matchday 31,Sunderland,Ipswich
-2027-04-10,15:00,Matchday 31,Leeds,Nott'm Forest
-2027-04-10,15:00,Matchday 31,Man United,Hull
-2027-04-10,15:00,Matchday 31,Chelsea,Fulham
-2027-04-10,15:00,Matchday 31,Liverpool,Newcastle
-2027-04-10,15:00,Matchday 31,Coventry,Arsenal
-2027-04-10,15:00,Matchday 31,Bournemouth,Man City
-2027-04-10,15:00,Matchday 31,Crystal Palace,Everton
-2027-04-10,15:00,Matchday 31,Tottenham,Brentford
-2027-04-10,15:00,Matchday 31,Aston Villa,Brighton
-2027-04-17,15:00,Matchday 32,Brighton,Chelsea
-2027-04-17,15:00,Matchday 32,Fulham,Sunderland
-2027-04-17,15:00,Matchday 32,Brentford,Leeds
-2027-04-17,15:00,Matchday 32,Nott'm Forest,Liverpool
-2027-04-17,15:00,Matchday 32,Hull,Coventry
-2027-04-17,15:00,Matchday 32,Arsenal,Aston Villa
-2027-04-17,15:00,Matchday 32,Ipswich,Man United
-2027-04-17,15:00,Matchday 32,Man City,Crystal Palace
-2027-04-17,15:00,Matchday 32,Newcastle,Tottenham
-2027-04-17,15:00,Matchday 32,Everton,Bournemouth
-2027-04-24,15:00,Matchday 33,Chelsea,Man City
-2027-04-24,15:00,Matchday 33,Bournemouth,Arsenal
-2027-04-24,15:00,Matchday 33,Tottenham,Hull
-2027-04-24,15:00,Matchday 33,Man United,Crystal Palace
-2027-04-24,15:00,Matchday 33,Everton,Brighton
-2027-04-24,15:00,Matchday 33,Nott'm Forest,Sunderland
-2027-04-24,15:00,Matchday 33,Newcastle,Ipswich
-2027-04-24,15:00,Matchday 33,Aston Villa,Coventry
-2027-04-24,15:00,Matchday 33,Brentford,Fulham
-2027-04-24,15:00,Matchday 33,Leeds,Liverpool
-2027-05-01,15:00,Matchday 34,Sunderland,Newcastle
-2027-05-01,15:00,Matchday 34,Brighton,Nott'm Forest
-2027-05-01,15:00,Matchday 34,Coventry,Man United
-2027-05-01,15:00,Matchday 34,Hull,Bournemouth
-2027-05-01,15:00,Matchday 34,Man City,Brentford
-2027-05-01,15:00,Matchday 34,Fulham,Everton
-2027-05-01,15:00,Matchday 34,Liverpool,Chelsea
-2027-05-01,15:00,Matchday 34,Arsenal,Tottenham
-2027-05-01,15:00,Matchday 34,Crystal Palace,Aston Villa
-2027-05-01,15:00,Matchday 34,Ipswich,Leeds
-2027-05-08,15:00,Matchday 35,Man City,Liverpool
-2027-05-08,15:00,Matchday 35,Leeds,Arsenal
-2027-05-08,15:00,Matchday 35,Fulham,Ipswich
-2027-05-08,15:00,Matchday 35,Nott'm Forest,Crystal Palace
-2027-05-08,15:00,Matchday 35,Brentford,Aston Villa
-2027-05-08,15:00,Matchday 35,Newcastle,Coventry
-2027-05-08,15:00,Matchday 35,Brighton,Sunderland
-2027-05-08,15:00,Matchday 35,Tottenham,Chelsea
-2027-05-08,15:00,Matchday 35,Everton,Hull
-2027-05-08,15:00,Matchday 35,Bournemouth,Man United
-2027-05-15,15:00,Matchday 36,Hull,Fulham
-2027-05-15,15:00,Matchday 36,Man United,Leeds
-2027-05-15,15:00,Matchday 36,Crystal Palace,Brighton
-2027-05-15,15:00,Matchday 36,Aston Villa,Newcastle
-2027-05-15,15:00,Matchday 36,Chelsea,Everton
-2027-05-15,15:00,Matchday 36,Coventry,Tottenham
-2027-05-15,15:00,Matchday 36,Sunderland,Bournemouth
-2027-05-15,15:00,Matchday 36,Liverpool,Brentford
-2027-05-15,15:00,Matchday 36,Ipswich,Man City
-2027-05-15,15:00,Matchday 36,Arsenal,Nott'm Forest
-2027-05-23,15:00,Matchday 37,Brentford,Hull
-2027-05-23,15:00,Matchday 37,Newcastle,Crystal Palace
-2027-05-23,15:00,Matchday 37,Tottenham,Man United
-2027-05-23,15:00,Matchday 37,Leeds,Sunderland
-2027-05-23,15:00,Matchday 37,Brighton,Liverpool
-2027-05-23,15:00,Matchday 37,Nott'm Forest,Ipswich
-2027-05-23,15:00,Matchday 37,Bournemouth,Chelsea
-2027-05-23,15:00,Matchday 37,Fulham,Coventry
-2027-05-23,15:00,Matchday 37,Everton,Arsenal
-2027-05-23,15:00,Matchday 37,Man City,Aston Villa
-2027-05-30,16:00,Matchday 38,Ipswich,Everton
-2027-05-30,16:00,Matchday 38,Arsenal,Brighton
-2027-05-30,16:00,Matchday 38,Liverpool,Bournemouth
-2027-05-30,16:00,Matchday 38,Coventry,Nott'm Forest
-2027-05-30,16:00,Matchday 38,Aston Villa,Tottenham
-2027-05-30,16:00,Matchday 38,Hull,Newcastle
-2027-05-30,16:00,Matchday 38,Man United,Fulham
-2027-05-30,16:00,Matchday 38,Sunderland,Man City
-2027-05-30,16:00,Matchday 38,Chelsea,Brentford
-2027-05-30,16:00,Matchday 38,Crystal Palace,Leeds
+2026-08-21,21:00,Matchday 1,Arsenal,Coventry
+2026-08-22,13:30,Matchday 1,Hull,Man United
+2026-08-22,16:00,Matchday 1,Ipswich,Sunderland
+2026-08-22,16:00,Matchday 1,Nott'm Forest,Leeds
+2026-08-22,16:00,Matchday 1,Everton,Crystal Palace
+2026-08-22,18:30,Matchday 1,Brentford,Tottenham
+2026-08-23,15:00,Matchday 1,Man City,Bournemouth
+2026-08-23,15:00,Matchday 1,Brighton,Aston Villa
+2026-08-23,17:30,Matchday 1,Newcastle,Liverpool
+2026-08-24,21:00,Matchday 1,Fulham,Chelsea
+2026-08-28,21:00,Matchday 2,Crystal Palace,Man City
+2026-08-29,13:30,Matchday 2,Liverpool,Nott'm Forest
+2026-08-29,16:00,Matchday 2,Bournemouth,Everton
+2026-08-29,16:00,Matchday 2,Coventry,Hull
+2026-08-29,18:30,Matchday 2,Tottenham,Newcastle
+2026-08-30,15:00,Matchday 2,Sunderland,Fulham
+2026-08-30,15:00,Matchday 2,Chelsea,Brighton
+2026-08-30,15:00,Matchday 2,Leeds,Brentford
+2026-08-30,17:30,Matchday 2,Man United,Ipswich
+2026-08-31,21:00,Matchday 2,Aston Villa,Arsenal
+2026-09-04,21:00,Matchday 3,Ipswich,Liverpool
+2026-09-05,13:30,Matchday 3,Newcastle,Bournemouth
+2026-09-05,16:00,Matchday 3,Nott'm Forest,Tottenham
+2026-09-05,16:00,Matchday 3,Man City,Coventry
+2026-09-05,16:00,Matchday 3,Brighton,Leeds
+2026-09-05,16:00,Matchday 3,Brentford,Sunderland
+2026-09-05,16:00,Matchday 3,Fulham,Crystal Palace
+2026-09-05,18:30,Matchday 3,Hull,Aston Villa
+2026-09-06,15:00,Matchday 3,Everton,Man United
+2026-09-06,17:30,Matchday 3,Arsenal,Chelsea
+2026-09-12,16:00,Matchday 4,Crystal Palace,Ipswich
+2026-09-12,16:00,Matchday 4,Liverpool,Fulham
+2026-09-12,16:00,Matchday 4,Aston Villa,Nott'm Forest
+2026-09-12,16:00,Matchday 4,Bournemouth,Brentford
+2026-09-12,16:00,Matchday 4,Chelsea,Hull
+2026-09-12,18:30,Matchday 4,Tottenham,Everton
+2026-09-12,21:00,Matchday 4,Sunderland,Arsenal
+2026-09-13,15:00,Matchday 4,Coventry,Brighton
+2026-09-13,17:30,Matchday 4,Man United,Man City
+2026-09-14,21:00,Matchday 4,Leeds,Newcastle
+2026-09-18,21:00,Matchday 5,Brentford,Chelsea
+2026-09-19,13:30,Matchday 5,Tottenham,Aston Villa
+2026-09-19,16:00,Matchday 5,Everton,Ipswich
+2026-09-19,16:00,Matchday 5,Brighton,Arsenal
+2026-09-19,16:00,Matchday 5,Newcastle,Hull
+2026-09-19,18:30,Matchday 5,Nott'm Forest,Coventry
+2026-09-20,15:00,Matchday 5,Bournemouth,Liverpool
+2026-09-20,15:00,Matchday 5,Leeds,Crystal Palace
+2026-09-20,15:00,Matchday 5,Man City,Sunderland
+2026-09-20,17:30,Matchday 5,Fulham,Man United
+2026-10-10,13:30,Matchday 6,Arsenal,Leeds
+2026-10-10,16:00,Matchday 6,Sunderland,Brighton
+2026-10-10,16:00,Matchday 6,Chelsea,Bournemouth
+2026-10-10,16:00,Matchday 6,Ipswich,Fulham
+2026-10-10,16:00,Matchday 6,Aston Villa,Brentford
+2026-10-10,18:30,Matchday 6,Man United,Tottenham
+2026-10-11,15:00,Matchday 6,Hull,Everton
+2026-10-11,15:00,Matchday 6,Crystal Palace,Nott'm Forest
+2026-10-11,17:30,Matchday 6,Liverpool,Man City
+2026-10-12,21:00,Matchday 6,Coventry,Newcastle
+2026-10-17,13:30,Matchday 7,Everton,Chelsea
+2026-10-17,16:00,Matchday 7,Fulham,Hull
+2026-10-17,16:00,Matchday 7,Man City,Ipswich
+2026-10-17,16:00,Matchday 7,Brentford,Liverpool
+2026-10-17,18:30,Matchday 7,Newcastle,Aston Villa
+2026-10-18,15:00,Matchday 7,Bournemouth,Sunderland
+2026-10-18,15:00,Matchday 7,Leeds,Man United
+2026-10-18,15:00,Matchday 7,Brighton,Crystal Palace
+2026-10-18,17:30,Matchday 7,Nott'm Forest,Arsenal
+2026-10-19,21:00,Matchday 7,Tottenham,Coventry
+2026-10-23,21:00,Matchday 8,Ipswich,Nott'm Forest
+2026-10-24,13:30,Matchday 8,Aston Villa,Man City
+2026-10-24,16:00,Matchday 8,Arsenal,Everton
+2026-10-24,16:00,Matchday 8,Coventry,Fulham
+2026-10-24,18:30,Matchday 8,Chelsea,Tottenham
+2026-10-25,15:00,Matchday 8,Liverpool,Brighton
+2026-10-25,15:00,Matchday 8,Crystal Palace,Newcastle
+2026-10-25,15:00,Matchday 8,Man United,Bournemouth
+2026-10-25,15:00,Matchday 8,Hull,Brentford
+2026-10-25,17:30,Matchday 8,Sunderland,Leeds
+2026-10-31,13:30,Matchday 9,Chelsea,Man United
+2026-10-31,16:00,Matchday 9,Man City,Brighton
+2026-10-31,16:00,Matchday 9,Bournemouth,Leeds
+2026-10-31,16:00,Matchday 9,Coventry,Sunderland
+2026-10-31,16:00,Matchday 9,Hull,Ipswich
+2026-10-31,16:00,Matchday 9,Brentford,Nott'm Forest
+2026-10-31,18:30,Matchday 9,Tottenham,Crystal Palace
+2026-10-31,21:00,Matchday 9,Aston Villa,Fulham
+2026-11-01,17:30,Matchday 9,Liverpool,Arsenal
+2026-11-02,21:00,Matchday 9,Newcastle,Everton
+2026-11-06,21:00,Matchday 10,Everton,Coventry
+2026-11-07,13:30,Matchday 10,Leeds,Tottenham
+2026-11-07,16:00,Matchday 10,Arsenal,Hull
+2026-11-07,16:00,Matchday 10,Fulham,Newcastle
+2026-11-07,18:30,Matchday 10,Nott'm Forest,Man City
+2026-11-08,15:00,Matchday 10,Crystal Palace,Liverpool
+2026-11-08,15:00,Matchday 10,Sunderland,Chelsea
+2026-11-08,15:00,Matchday 10,Ipswich,Bournemouth
+2026-11-08,15:00,Matchday 10,Brighton,Brentford
+2026-11-08,17:30,Matchday 10,Man United,Aston Villa
+2026-11-21,13:30,Matchday 11,Man City,Fulham
+2026-11-21,16:00,Matchday 11,Chelsea,Leeds
+2026-11-21,16:00,Matchday 11,Aston Villa,Sunderland
+2026-11-21,16:00,Matchday 11,Bournemouth,Nott'm Forest
+2026-11-21,16:00,Matchday 11,Tottenham,Ipswich
+2026-11-21,16:00,Matchday 11,Coventry,Crystal Palace
+2026-11-21,18:30,Matchday 11,Newcastle,Arsenal
+2026-11-22,15:00,Matchday 11,Hull,Brighton
+2026-11-22,17:30,Matchday 11,Liverpool,Man United
+2026-11-23,21:00,Matchday 11,Brentford,Everton
+2026-11-27,21:00,Matchday 12,Nott'm Forest,Chelsea
+2026-11-28,16:00,Matchday 12,Leeds,Coventry
+2026-11-28,16:00,Matchday 12,Man United,Brentford
+2026-11-28,18:30,Matchday 12,Ipswich,Aston Villa
+2026-11-29,13:00,Matchday 12,Everton,Liverpool
+2026-11-29,15:05,Matchday 12,Fulham,Bournemouth
+2026-11-29,15:05,Matchday 12,Brighton,Newcastle
+2026-11-29,15:05,Matchday 12,Sunderland,Tottenham
+2026-11-29,15:05,Matchday 12,Crystal Palace,Hull
+2026-11-29,17:30,Matchday 12,Arsenal,Man City
+2026-12-02,21:00,Matchday 13,Tottenham,Fulham
+2026-12-02,21:00,Matchday 13,Liverpool,Sunderland
+2026-12-02,21:00,Matchday 13,Hull,Nott'm Forest
+2026-12-02,21:00,Matchday 13,Chelsea,Crystal Palace
+2026-12-02,21:00,Matchday 13,Aston Villa,Everton
+2026-12-02,21:00,Matchday 13,Brentford,Arsenal
+2026-12-02,21:00,Matchday 13,Coventry,Ipswich
+2026-12-02,21:00,Matchday 13,Man City,Leeds
+2026-12-02,21:00,Matchday 13,Newcastle,Man United
+2026-12-02,21:00,Matchday 13,Bournemouth,Brighton
+2026-12-05,16:00,Matchday 14,Tottenham,Arsenal
+2026-12-05,16:00,Matchday 14,Man United,Coventry
+2026-12-05,16:00,Matchday 14,Leeds,Ipswich
+2026-12-05,16:00,Matchday 14,Newcastle,Sunderland
+2026-12-05,16:00,Matchday 14,Chelsea,Liverpool
+2026-12-05,16:00,Matchday 14,Brentford,Man City
+2026-12-05,16:00,Matchday 14,Bournemouth,Hull
+2026-12-05,16:00,Matchday 14,Aston Villa,Crystal Palace
+2026-12-05,16:00,Matchday 14,Nott'm Forest,Brighton
+2026-12-05,16:00,Matchday 14,Everton,Fulham
+2026-12-12,16:00,Matchday 15,Sunderland,Nott'm Forest
+2026-12-12,16:00,Matchday 15,Crystal Palace,Man United
+2026-12-12,16:00,Matchday 15,Hull,Tottenham
+2026-12-12,16:00,Matchday 15,Brighton,Everton
+2026-12-12,16:00,Matchday 15,Ipswich,Newcastle
+2026-12-12,16:00,Matchday 15,Coventry,Aston Villa
+2026-12-12,16:00,Matchday 15,Arsenal,Bournemouth
+2026-12-12,16:00,Matchday 15,Man City,Chelsea
+2026-12-12,16:00,Matchday 15,Liverpool,Leeds
+2026-12-12,16:00,Matchday 15,Fulham,Brentford
+2026-12-19,16:00,Matchday 16,Leeds,Fulham
+2026-12-19,16:00,Matchday 16,Brighton,Ipswich
+2026-12-19,16:00,Matchday 16,Nott'm Forest,Everton
+2026-12-19,16:00,Matchday 16,Brentford,Newcastle
+2026-12-19,16:00,Matchday 16,Man City,Hull
+2026-12-19,16:00,Matchday 16,Sunderland,Crystal Palace
+2026-12-19,16:00,Matchday 16,Bournemouth,Coventry
+2026-12-19,16:00,Matchday 16,Arsenal,Man United
+2026-12-19,16:00,Matchday 16,Liverpool,Tottenham
+2026-12-19,16:00,Matchday 16,Chelsea,Aston Villa
+2026-12-26,13:30,Matchday 17,Aston Villa,Leeds
+2026-12-26,16:00,Matchday 17,Everton,Sunderland
+2026-12-26,16:00,Matchday 17,Fulham,Brighton
+2026-12-26,16:00,Matchday 17,Tottenham,Bournemouth
+2026-12-26,16:00,Matchday 17,Ipswich,Brentford
+2026-12-26,18:30,Matchday 17,Hull,Liverpool
+2026-12-26,21:00,Matchday 17,Newcastle,Man City
+2026-12-27,15:00,Matchday 17,Coventry,Chelsea
+2026-12-27,17:30,Matchday 17,Man United,Nott'm Forest
+2026-12-27,20:00,Matchday 17,Crystal Palace,Arsenal
+2026-12-29,20:30,Matchday 18,Hull,Leeds
+2026-12-29,20:30,Matchday 18,Tottenham,Brighton
+2026-12-29,21:15,Matchday 18,Everton,Man City
+2026-12-30,20:30,Matchday 18,Fulham,Arsenal
+2026-12-30,20:30,Matchday 18,Coventry,Brentford
+2026-12-30,20:30,Matchday 18,Newcastle,Nott'm Forest
+2026-12-30,20:30,Matchday 18,Man United,Sunderland
+2026-12-30,20:30,Matchday 18,Crystal Palace,Bournemouth
+2026-12-30,21:15,Matchday 18,Aston Villa,Liverpool
+2026-12-30,21:15,Matchday 18,Ipswich,Chelsea
+2027-01-01,21:00,Matchday 19,Leeds,Everton
+2027-01-02,13:30,Matchday 19,Brighton,Man United
+2027-01-02,16:00,Matchday 19,Brentford,Crystal Palace
+2027-01-02,16:00,Matchday 19,Arsenal,Ipswich
+2027-01-02,16:00,Matchday 19,Sunderland,Hull
+2027-01-02,16:00,Matchday 19,Liverpool,Coventry
+2027-01-02,16:00,Matchday 19,Nott'm Forest,Fulham
+2027-01-02,18:30,Matchday 19,Bournemouth,Aston Villa
+2027-01-03,15:00,Matchday 19,Chelsea,Newcastle
+2027-01-03,17:30,Matchday 19,Man City,Tottenham
+2027-01-05,20:30,Matchday 20,Arsenal,Brentford
+2027-01-05,20:30,Matchday 20,Brighton,Bournemouth
+2027-01-05,20:30,Matchday 20,Nott'm Forest,Hull
+2027-01-05,20:30,Matchday 20,Everton,Aston Villa
+2027-01-05,21:15,Matchday 20,Sunderland,Liverpool
+2027-01-06,20:30,Matchday 20,Fulham,Tottenham
+2027-01-06,20:30,Matchday 20,Crystal Palace,Chelsea
+2027-01-06,20:30,Matchday 20,Ipswich,Coventry
+2027-01-06,21:15,Matchday 20,Leeds,Man City
+2027-01-07,21:00,Matchday 20,Man United,Newcastle
+2027-01-16,16:00,Matchday 21,Bournemouth,Ipswich
+2027-01-16,16:00,Matchday 21,Man City,Nott'm Forest
+2027-01-16,16:00,Matchday 21,Chelsea,Sunderland
+2027-01-16,16:00,Matchday 21,Brentford,Brighton
+2027-01-16,16:00,Matchday 21,Aston Villa,Man United
+2027-01-16,16:00,Matchday 21,Tottenham,Leeds
+2027-01-16,16:00,Matchday 21,Coventry,Everton
+2027-01-16,16:00,Matchday 21,Liverpool,Crystal Palace
+2027-01-16,16:00,Matchday 21,Hull,Arsenal
+2027-01-16,16:00,Matchday 21,Newcastle,Fulham
+2027-01-23,16:00,Matchday 22,Ipswich,Hull
+2027-01-23,16:00,Matchday 22,Everton,Brentford
+2027-01-23,16:00,Matchday 22,Sunderland,Coventry
+2027-01-23,16:00,Matchday 22,Nott'm Forest,Bournemouth
+2027-01-23,16:00,Matchday 22,Arsenal,Newcastle
+2027-01-23,16:00,Matchday 22,Leeds,Chelsea
+2027-01-23,16:00,Matchday 22,Fulham,Aston Villa
+2027-01-23,16:00,Matchday 22,Man United,Liverpool
+2027-01-23,16:00,Matchday 22,Brighton,Man City
+2027-01-23,16:00,Matchday 22,Crystal Palace,Tottenham
+2027-01-30,16:00,Matchday 23,Tottenham,Sunderland
+2027-01-30,16:00,Matchday 23,Brentford,Man United
+2027-01-30,16:00,Matchday 23,Newcastle,Brighton
+2027-01-30,16:00,Matchday 23,Hull,Crystal Palace
+2027-01-30,16:00,Matchday 23,Coventry,Leeds
+2027-01-30,16:00,Matchday 23,Bournemouth,Fulham
+2027-01-30,16:00,Matchday 23,Chelsea,Nott'm Forest
+2027-01-30,16:00,Matchday 23,Liverpool,Everton
+2027-01-30,16:00,Matchday 23,Man City,Arsenal
+2027-01-30,16:00,Matchday 23,Aston Villa,Ipswich
+2027-02-06,16:00,Matchday 24,Arsenal,Liverpool
+2027-02-06,16:00,Matchday 24,Brighton,Hull
+2027-02-06,16:00,Matchday 24,Sunderland,Aston Villa
+2027-02-06,16:00,Matchday 24,Crystal Palace,Coventry
+2027-02-06,16:00,Matchday 24,Ipswich,Tottenham
+2027-02-06,16:00,Matchday 24,Everton,Newcastle
+2027-02-06,16:00,Matchday 24,Fulham,Man City
+2027-02-06,16:00,Matchday 24,Leeds,Bournemouth
+2027-02-06,16:00,Matchday 24,Man United,Chelsea
+2027-02-06,16:00,Matchday 24,Nott'm Forest,Brentford
+2027-02-10,21:00,Matchday 25,Everton,Leeds
+2027-02-10,21:00,Matchday 25,Coventry,Liverpool
+2027-02-10,21:00,Matchday 25,Hull,Sunderland
+2027-02-10,21:00,Matchday 25,Aston Villa,Bournemouth
+2027-02-10,21:00,Matchday 25,Crystal Palace,Brentford
+2027-02-10,21:00,Matchday 25,Newcastle,Chelsea
+2027-02-10,21:00,Matchday 25,Fulham,Nott'm Forest
+2027-02-10,21:00,Matchday 25,Tottenham,Man City
+2027-02-10,21:00,Matchday 25,Man United,Brighton
+2027-02-10,21:00,Matchday 25,Ipswich,Arsenal
+2027-02-20,16:00,Matchday 26,Man City,Newcastle
+2027-02-20,16:00,Matchday 26,Bournemouth,Crystal Palace
+2027-02-20,16:00,Matchday 26,Brentford,Coventry
+2027-02-20,16:00,Matchday 26,Chelsea,Ipswich
+2027-02-20,16:00,Matchday 26,Liverpool,Hull
+2027-02-20,16:00,Matchday 26,Arsenal,Fulham
+2027-02-20,16:00,Matchday 26,Nott'm Forest,Man United
+2027-02-20,16:00,Matchday 26,Brighton,Tottenham
+2027-02-20,16:00,Matchday 26,Sunderland,Everton
+2027-02-20,16:00,Matchday 26,Leeds,Aston Villa
+2027-02-27,16:00,Matchday 27,Crystal Palace,Sunderland
+2027-02-27,16:00,Matchday 27,Man United,Arsenal
+2027-02-27,16:00,Matchday 27,Ipswich,Brighton
+2027-02-27,16:00,Matchday 27,Coventry,Bournemouth
+2027-02-27,16:00,Matchday 27,Everton,Nott'm Forest
+2027-02-27,16:00,Matchday 27,Fulham,Leeds
+2027-02-27,16:00,Matchday 27,Aston Villa,Chelsea
+2027-02-27,16:00,Matchday 27,Tottenham,Liverpool
+2027-02-27,16:00,Matchday 27,Newcastle,Brentford
+2027-02-27,16:00,Matchday 27,Hull,Man City
+2027-03-03,21:00,Matchday 28,Nott'm Forest,Newcastle
+2027-03-03,21:00,Matchday 28,Bournemouth,Tottenham
+2027-03-03,21:00,Matchday 28,Man City,Everton
+2027-03-03,21:00,Matchday 28,Arsenal,Crystal Palace
+2027-03-03,21:00,Matchday 28,Leeds,Hull
+2027-03-03,21:00,Matchday 28,Sunderland,Man United
+2027-03-03,21:00,Matchday 28,Liverpool,Aston Villa
+2027-03-03,21:00,Matchday 28,Brighton,Fulham
+2027-03-03,21:00,Matchday 28,Brentford,Ipswich
+2027-03-03,21:00,Matchday 28,Chelsea,Coventry
+2027-03-13,16:00,Matchday 29,Leeds,Brighton
+2027-03-13,16:00,Matchday 29,Tottenham,Nott'm Forest
+2027-03-13,16:00,Matchday 29,Crystal Palace,Fulham
+2027-03-13,16:00,Matchday 29,Liverpool,Ipswich
+2027-03-13,16:00,Matchday 29,Coventry,Man City
+2027-03-13,16:00,Matchday 29,Bournemouth,Newcastle
+2027-03-13,16:00,Matchday 29,Chelsea,Arsenal
+2027-03-13,16:00,Matchday 29,Aston Villa,Hull
+2027-03-13,16:00,Matchday 29,Man United,Everton
+2027-03-13,16:00,Matchday 29,Sunderland,Brentford
+2027-03-20,16:00,Matchday 30,Brentford,Bournemouth
+2027-03-20,16:00,Matchday 30,Brighton,Coventry
+2027-03-20,16:00,Matchday 30,Man City,Man United
+2027-03-20,16:00,Matchday 30,Ipswich,Crystal Palace
+2027-03-20,16:00,Matchday 30,Arsenal,Sunderland
+2027-03-20,16:00,Matchday 30,Fulham,Liverpool
+2027-03-20,16:00,Matchday 30,Hull,Chelsea
+2027-03-20,16:00,Matchday 30,Nott'm Forest,Aston Villa
+2027-03-20,16:00,Matchday 30,Everton,Tottenham
+2027-03-20,16:00,Matchday 30,Newcastle,Leeds
+2027-04-10,16:00,Matchday 31,Sunderland,Ipswich
+2027-04-10,16:00,Matchday 31,Leeds,Nott'm Forest
+2027-04-10,16:00,Matchday 31,Man United,Hull
+2027-04-10,16:00,Matchday 31,Chelsea,Fulham
+2027-04-10,16:00,Matchday 31,Liverpool,Newcastle
+2027-04-10,16:00,Matchday 31,Coventry,Arsenal
+2027-04-10,16:00,Matchday 31,Bournemouth,Man City
+2027-04-10,16:00,Matchday 31,Crystal Palace,Everton
+2027-04-10,16:00,Matchday 31,Tottenham,Brentford
+2027-04-10,16:00,Matchday 31,Aston Villa,Brighton
+2027-04-17,16:00,Matchday 32,Brighton,Chelsea
+2027-04-17,16:00,Matchday 32,Fulham,Sunderland
+2027-04-17,16:00,Matchday 32,Brentford,Leeds
+2027-04-17,16:00,Matchday 32,Nott'm Forest,Liverpool
+2027-04-17,16:00,Matchday 32,Hull,Coventry
+2027-04-17,16:00,Matchday 32,Arsenal,Aston Villa
+2027-04-17,16:00,Matchday 32,Ipswich,Man United
+2027-04-17,16:00,Matchday 32,Man City,Crystal Palace
+2027-04-17,16:00,Matchday 32,Newcastle,Tottenham
+2027-04-17,16:00,Matchday 32,Everton,Bournemouth
+2027-04-24,16:00,Matchday 33,Chelsea,Man City
+2027-04-24,16:00,Matchday 33,Bournemouth,Arsenal
+2027-04-24,16:00,Matchday 33,Tottenham,Hull
+2027-04-24,16:00,Matchday 33,Man United,Crystal Palace
+2027-04-24,16:00,Matchday 33,Everton,Brighton
+2027-04-24,16:00,Matchday 33,Nott'm Forest,Sunderland
+2027-04-24,16:00,Matchday 33,Newcastle,Ipswich
+2027-04-24,16:00,Matchday 33,Aston Villa,Coventry
+2027-04-24,16:00,Matchday 33,Brentford,Fulham
+2027-04-24,16:00,Matchday 33,Leeds,Liverpool
+2027-05-01,16:00,Matchday 34,Sunderland,Newcastle
+2027-05-01,16:00,Matchday 34,Brighton,Nott'm Forest
+2027-05-01,16:00,Matchday 34,Coventry,Man United
+2027-05-01,16:00,Matchday 34,Hull,Bournemouth
+2027-05-01,16:00,Matchday 34,Man City,Brentford
+2027-05-01,16:00,Matchday 34,Fulham,Everton
+2027-05-01,16:00,Matchday 34,Liverpool,Chelsea
+2027-05-01,16:00,Matchday 34,Arsenal,Tottenham
+2027-05-01,16:00,Matchday 34,Crystal Palace,Aston Villa
+2027-05-01,16:00,Matchday 34,Ipswich,Leeds
+2027-05-08,16:00,Matchday 35,Man City,Liverpool
+2027-05-08,16:00,Matchday 35,Leeds,Arsenal
+2027-05-08,16:00,Matchday 35,Fulham,Ipswich
+2027-05-08,16:00,Matchday 35,Nott'm Forest,Crystal Palace
+2027-05-08,16:00,Matchday 35,Brentford,Aston Villa
+2027-05-08,16:00,Matchday 35,Newcastle,Coventry
+2027-05-08,16:00,Matchday 35,Brighton,Sunderland
+2027-05-08,16:00,Matchday 35,Tottenham,Chelsea
+2027-05-08,16:00,Matchday 35,Everton,Hull
+2027-05-08,16:00,Matchday 35,Bournemouth,Man United
+2027-05-15,16:00,Matchday 36,Hull,Fulham
+2027-05-15,16:00,Matchday 36,Man United,Leeds
+2027-05-15,16:00,Matchday 36,Crystal Palace,Brighton
+2027-05-15,16:00,Matchday 36,Aston Villa,Newcastle
+2027-05-15,16:00,Matchday 36,Chelsea,Everton
+2027-05-15,16:00,Matchday 36,Coventry,Tottenham
+2027-05-15,16:00,Matchday 36,Sunderland,Bournemouth
+2027-05-15,16:00,Matchday 36,Liverpool,Brentford
+2027-05-15,16:00,Matchday 36,Ipswich,Man City
+2027-05-15,16:00,Matchday 36,Arsenal,Nott'm Forest
+2027-05-23,16:00,Matchday 37,Brentford,Hull
+2027-05-23,16:00,Matchday 37,Newcastle,Crystal Palace
+2027-05-23,16:00,Matchday 37,Tottenham,Man United
+2027-05-23,16:00,Matchday 37,Leeds,Sunderland
+2027-05-23,16:00,Matchday 37,Brighton,Liverpool
+2027-05-23,16:00,Matchday 37,Nott'm Forest,Ipswich
+2027-05-23,16:00,Matchday 37,Bournemouth,Chelsea
+2027-05-23,16:00,Matchday 37,Fulham,Coventry
+2027-05-23,16:00,Matchday 37,Everton,Arsenal
+2027-05-23,16:00,Matchday 37,Man City,Aston Villa
+2027-05-30,17:00,Matchday 38,Ipswich,Everton
+2027-05-30,17:00,Matchday 38,Arsenal,Brighton
+2027-05-30,17:00,Matchday 38,Liverpool,Bournemouth
+2027-05-30,17:00,Matchday 38,Coventry,Nott'm Forest
+2027-05-30,17:00,Matchday 38,Aston Villa,Tottenham
+2027-05-30,17:00,Matchday 38,Hull,Newcastle
+2027-05-30,17:00,Matchday 38,Man United,Fulham
+2027-05-30,17:00,Matchday 38,Sunderland,Man City
+2027-05-30,17:00,Matchday 38,Chelsea,Brentford
+2027-05-30,17:00,Matchday 38,Crystal Palace,Leeds
