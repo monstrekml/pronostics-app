@@ -14,6 +14,10 @@ import pandas as pd
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
+# Streamlit Cloud recharge app.py après un push, mais pas forcément les modules de src/ :
+# on les oublie à chaque exécution pour toujours importer leur dernière version.
+for _module in ("sources", "donnees", "foot_poisson", "basket_elo", "metriques", "marche"):
+    sys.modules.pop(_module, None)
 from basket_elo import EloNBA                                          # noqa: E402
 from donnees import (                                                  # noqa: E402
     charger_calendrier_foot, charger_cotes, charger_nba, charger_resultats_foot, date_fichier, etat_mise_a_jour,
