@@ -1,7 +1,7 @@
 {
   "foot": {
     "premier-league": {
-      "heure": "2026-10-09T13:04:02Z",
+      "heure": "2026-10-09T21:57:21Z",
       "source_resultats": "openfootball + football-data.org",
       "ajouts_football_data_org": 5,
       "matchs_joues": 50,
@@ -10,27 +10,27 @@
       "statut": "ok"
     },
     "la-liga": {
-      "heure": "2026-10-09T13:04:03Z",
+      "heure": "2026-10-09T21:57:22Z",
       "source_resultats": "openfootball + football-data.org",
-      "ajouts_football_data_org": 5,
-      "matchs_joues": 69,
+      "ajouts_football_data_org": 6,
+      "matchs_joues": 70,
       "matchs_au_calendrier": 380,
-      "dernier_resultat": "2026-09-20",
+      "dernier_resultat": "2026-10-09",
       "statut": "ok"
     },
     "ligue-1": {
-      "heure": "2026-10-09T13:04:04Z",
+      "heure": "2026-10-09T21:57:23Z",
       "source_resultats": "openfootball + football-data.org",
-      "ajouts_football_data_org": 4,
-      "matchs_joues": 45,
+      "ajouts_football_data_org": 5,
+      "matchs_joues": 46,
       "matchs_au_calendrier": 306,
-      "dernier_resultat": "2026-09-20",
+      "dernier_resultat": "2026-10-09",
       "statut": "ok"
     }
   },
-  "derniere_execution": "2026-10-09T13:04:09Z",
+  "derniere_execution": "2026-10-09T21:57:29Z",
   "nba": {
-    "heure": "2026-10-09T13:04:05Z",
+    "heure": "2026-10-09T21:57:24Z",
     "statut": "ok",
     "jours_interroges": 136,
     "jours_en_echec": 0,
@@ -38,21 +38,21 @@
     "dernier_resultat": "2026-06-13"
   },
   "cotes": {
-    "heure": "2026-10-09T13:04:08Z",
+    "heure": "2026-10-09T21:57:28Z",
     "premier-league": {
       "statut": "ok",
       "matchs_cotes": 20,
       "noms_non_associes": []
     },
-    "credits_restants": "460",
+    "credits_restants": "456",
     "la-liga": {
       "statut": "ok",
-      "matchs_cotes": 20,
+      "matchs_cotes": 19,
       "noms_non_associes": []
     },
     "ligue-1": {
       "statut": "ok",
-      "matchs_cotes": 18,
+      "matchs_cotes": 17,
       "noms_non_associes": []
     },
     "nba": {
