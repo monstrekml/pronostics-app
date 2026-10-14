@@ -109,16 +109,16 @@ Date,Heure,Journee,HomeTeam,AwayTeam
 2026-11-01,18:30,Matchday 11,Elche,Valencia
 2026-11-01,21:00,Matchday 11,Ath Bilbao,Sociedad
 2026-11-02,21:00,Matchday 11,La Coruna,Osasuna
-2026-11-08,01:00,Matchday 12,Elche,Betis
-2026-11-08,01:00,Matchday 12,Osasuna,Ath Bilbao
-2026-11-08,01:00,Matchday 12,Sevilla,Alaves
-2026-11-08,01:00,Matchday 12,Valencia,Real Madrid
-2026-11-08,01:00,Matchday 12,Celta,Levante
-2026-11-08,01:00,Matchday 12,Sociedad,Vallecano
-2026-11-08,01:00,Matchday 12,Malaga,Racing Santander
-2026-11-08,01:00,Matchday 12,Espanol,La Coruna
-2026-11-08,01:00,Matchday 12,Ath Madrid,Barcelona
-2026-11-08,01:00,Matchday 12,Villarreal,Getafe
+2026-11-06,21:00,Matchday 12,Sevilla,Alaves
+2026-11-07,14:00,Matchday 12,Malaga,Racing Santander
+2026-11-07,16:15,Matchday 12,Espanol,La Coruna
+2026-11-07,18:30,Matchday 12,Osasuna,Ath Bilbao
+2026-11-07,21:00,Matchday 12,Valencia,Real Madrid
+2026-11-08,14:00,Matchday 12,Elche,Betis
+2026-11-08,16:15,Matchday 12,Sociedad,Vallecano
+2026-11-08,18:30,Matchday 12,Celta,Levante
+2026-11-08,18:30,Matchday 12,Villarreal,Getafe
+2026-11-08,21:00,Matchday 12,Ath Madrid,Barcelona
 2026-11-22,01:00,Matchday 13,Ath Bilbao,Espanol
 2026-11-22,01:00,Matchday 13,Barcelona,Villarreal
 2026-11-22,01:00,Matchday 13,Racing Santander,Sociedad
