@@ -119,46 +119,46 @@ Date,Heure,Journee,HomeTeam,AwayTeam
 2026-11-29,15:05,Matchday 12,Sunderland,Tottenham
 2026-11-29,15:05,Matchday 12,Crystal Palace,Hull
 2026-11-29,17:30,Matchday 12,Arsenal,Man City
-2026-12-02,21:00,Matchday 13,Tottenham,Fulham
-2026-12-02,21:00,Matchday 13,Liverpool,Sunderland
-2026-12-02,21:00,Matchday 13,Hull,Nott'm Forest
-2026-12-02,21:00,Matchday 13,Chelsea,Crystal Palace
-2026-12-02,21:00,Matchday 13,Aston Villa,Everton
-2026-12-02,21:00,Matchday 13,Brentford,Arsenal
-2026-12-02,21:00,Matchday 13,Coventry,Ipswich
-2026-12-02,21:00,Matchday 13,Man City,Leeds
-2026-12-02,21:00,Matchday 13,Newcastle,Man United
-2026-12-02,21:00,Matchday 13,Bournemouth,Brighton
-2026-12-05,16:00,Matchday 14,Tottenham,Arsenal
+2026-12-01,21:00,Matchday 13,Coventry,Ipswich
+2026-12-02,20:30,Matchday 13,Liverpool,Sunderland
+2026-12-02,20:30,Matchday 13,Hull,Nott'm Forest
+2026-12-02,20:30,Matchday 13,Chelsea,Crystal Palace
+2026-12-02,20:30,Matchday 13,Man City,Leeds
+2026-12-02,21:15,Matchday 13,Aston Villa,Everton
+2026-12-02,21:15,Matchday 13,Brentford,Arsenal
+2026-12-02,21:15,Matchday 13,Newcastle,Man United
+2026-12-02,21:15,Matchday 13,Bournemouth,Brighton
+2026-12-03,21:00,Matchday 13,Tottenham,Fulham
+2026-12-05,13:30,Matchday 14,Chelsea,Liverpool
 2026-12-05,16:00,Matchday 14,Man United,Coventry
 2026-12-05,16:00,Matchday 14,Leeds,Ipswich
-2026-12-05,16:00,Matchday 14,Newcastle,Sunderland
-2026-12-05,16:00,Matchday 14,Chelsea,Liverpool
-2026-12-05,16:00,Matchday 14,Brentford,Man City
 2026-12-05,16:00,Matchday 14,Bournemouth,Hull
 2026-12-05,16:00,Matchday 14,Aston Villa,Crystal Palace
-2026-12-05,16:00,Matchday 14,Nott'm Forest,Brighton
-2026-12-05,16:00,Matchday 14,Everton,Fulham
-2026-12-12,16:00,Matchday 15,Sunderland,Nott'm Forest
-2026-12-12,16:00,Matchday 15,Crystal Palace,Man United
-2026-12-12,16:00,Matchday 15,Hull,Tottenham
-2026-12-12,16:00,Matchday 15,Brighton,Everton
+2026-12-05,18:30,Matchday 14,Nott'm Forest,Brighton
+2026-12-05,21:00,Matchday 14,Brentford,Man City
+2026-12-06,15:00,Matchday 14,Newcastle,Sunderland
+2026-12-06,15:00,Matchday 14,Everton,Fulham
+2026-12-06,17:30,Matchday 14,Tottenham,Arsenal
 2026-12-12,16:00,Matchday 15,Ipswich,Newcastle
-2026-12-12,16:00,Matchday 15,Coventry,Aston Villa
-2026-12-12,16:00,Matchday 15,Arsenal,Bournemouth
-2026-12-12,16:00,Matchday 15,Man City,Chelsea
 2026-12-12,16:00,Matchday 15,Liverpool,Leeds
 2026-12-12,16:00,Matchday 15,Fulham,Brentford
+2026-12-12,18:30,Matchday 15,Man City,Chelsea
+2026-12-13,15:00,Matchday 15,Sunderland,Nott'm Forest
+2026-12-13,15:00,Matchday 15,Brighton,Everton
+2026-12-13,15:00,Matchday 15,Arsenal,Bournemouth
+2026-12-13,17:30,Matchday 15,Coventry,Aston Villa
+2026-12-13,20:00,Matchday 15,Crystal Palace,Man United
+2026-12-14,21:00,Matchday 15,Hull,Tottenham
+2026-12-19,13:30,Matchday 16,Brentford,Newcastle
 2026-12-19,16:00,Matchday 16,Leeds,Fulham
-2026-12-19,16:00,Matchday 16,Brighton,Ipswich
 2026-12-19,16:00,Matchday 16,Nott'm Forest,Everton
-2026-12-19,16:00,Matchday 16,Brentford,Newcastle
 2026-12-19,16:00,Matchday 16,Man City,Hull
-2026-12-19,16:00,Matchday 16,Sunderland,Crystal Palace
 2026-12-19,16:00,Matchday 16,Bournemouth,Coventry
-2026-12-19,16:00,Matchday 16,Arsenal,Man United
-2026-12-19,16:00,Matchday 16,Liverpool,Tottenham
-2026-12-19,16:00,Matchday 16,Chelsea,Aston Villa
+2026-12-19,18:30,Matchday 16,Liverpool,Tottenham
+2026-12-20,15:00,Matchday 16,Brighton,Ipswich
+2026-12-20,15:00,Matchday 16,Sunderland,Crystal Palace
+2026-12-20,17:30,Matchday 16,Arsenal,Man United
+2026-12-21,21:00,Matchday 16,Chelsea,Aston Villa
 2026-12-26,13:30,Matchday 17,Aston Villa,Leeds
 2026-12-26,16:00,Matchday 17,Everton,Sunderland
 2026-12-26,16:00,Matchday 17,Fulham,Brighton
