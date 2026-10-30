@@ -69,7 +69,6 @@ Date,Heure,Journee,HomeTeam,AwayTeam
 2026-09-20,18:30,Matchday 7,Villarreal,Levante
 2026-09-20,21:00,Matchday 7,Valencia,Sociedad
 2026-10-09,21:00,Matchday 8,Malaga,Espanol
-2026-10-10,14:00,Matchday 8,Vallecano,Ath Bilbao
 2026-10-10,16:15,Matchday 8,Alaves,Ath Madrid
 2026-10-10,18:30,Matchday 8,Barcelona,Getafe
 2026-10-10,21:00,Matchday 8,Real Madrid,Villarreal
@@ -149,6 +148,7 @@ Date,Heure,Journee,HomeTeam,AwayTeam
 2026-12-06,01:00,Matchday 15,Ath Bilbao,Real Madrid
 2026-12-06,01:00,Matchday 15,Villarreal,Sociedad
 2026-12-06,01:00,Matchday 15,Vallecano,Levante
+2026-12-09,20:00,Matchday 8,Vallecano,Ath Bilbao
 2026-12-13,01:00,Matchday 16,Espanol,Celta
 2026-12-13,01:00,Matchday 16,Malaga,Barcelona
 2026-12-13,01:00,Matchday 16,Real Madrid,Osasuna
