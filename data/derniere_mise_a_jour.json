@@ -1,25 +1,25 @@
 {
   "foot": {
     "premier-league": {
-      "heure": "2026-11-02T15:31:44Z",
+      "heure": "2026-11-03T00:08:08Z",
       "source_resultats": "openfootball + football-data.org",
-      "ajouts_football_data_org": 44,
-      "matchs_joues": 89,
+      "ajouts_football_data_org": 45,
+      "matchs_joues": 90,
       "matchs_au_calendrier": 380,
-      "dernier_resultat": "2026-11-01",
+      "dernier_resultat": "2026-11-02",
       "statut": "ok"
     },
     "la-liga": {
-      "heure": "2026-11-02T15:31:45Z",
+      "heure": "2026-11-03T00:08:09Z",
       "source_resultats": "openfootball + football-data.org",
-      "ajouts_football_data_org": 44,
-      "matchs_joues": 108,
+      "ajouts_football_data_org": 45,
+      "matchs_joues": 109,
       "matchs_au_calendrier": 380,
-      "dernier_resultat": "2026-11-01",
+      "dernier_resultat": "2026-11-02",
       "statut": "ok"
     },
     "ligue-1": {
-      "heure": "2026-11-02T15:31:47Z",
+      "heure": "2026-11-03T00:08:10Z",
       "source_resultats": "openfootball + football-data.org",
       "ajouts_football_data_org": 39,
       "matchs_joues": 80,
@@ -28,31 +28,31 @@
       "statut": "ok"
     }
   },
-  "derniere_execution": "2026-11-02T15:31:51Z",
+  "derniere_execution": "2026-11-03T00:08:13Z",
   "nba": {
-    "heure": "2026-11-02T15:31:48Z",
+    "heure": "2026-11-03T00:08:11Z",
     "statut": "ok",
     "jours_interroges": 20,
     "jours_en_echec": 0,
-    "matchs_total": 14446,
+    "matchs_total": 14451,
     "dernier_resultat": "2026-11-01"
   },
   "cotes": {
-    "heure": "2026-11-02T15:31:49Z",
+    "heure": "2026-11-03T00:08:12Z",
     "premier-league": {
       "statut": "ok",
-      "matchs_cotes": 21,
+      "matchs_cotes": 20,
       "noms_non_associes": []
     },
-    "credits_restants": "488",
+    "credits_restants": "484",
     "la-liga": {
       "statut": "ok",
-      "matchs_cotes": 11,
+      "matchs_cotes": 10,
       "noms_non_associes": []
     },
     "ligue-1": {
       "statut": "ok",
-      "matchs_cotes": 19,
+      "matchs_cotes": 18,
       "noms_non_associes": []
     },
     "nba": {
