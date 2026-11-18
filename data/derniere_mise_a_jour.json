@@ -1,7 +1,7 @@
 {
   "foot": {
     "premier-league": {
-      "heure": "2026-11-18T15:30:19Z",
+      "heure": "2026-11-18T23:40:21Z",
       "source_resultats": "openfootball + football-data.org",
       "ajouts_football_data_org": 55,
       "matchs_joues": 100,
@@ -10,7 +10,7 @@
       "statut": "ok"
     },
     "la-liga": {
-      "heure": "2026-11-18T15:30:20Z",
+      "heure": "2026-11-18T23:40:22Z",
       "source_resultats": "openfootball + football-data.org",
       "ajouts_football_data_org": 55,
       "matchs_joues": 119,
@@ -19,7 +19,7 @@
       "statut": "ok"
     },
     "ligue-1": {
-      "heure": "2026-11-18T15:30:22Z",
+      "heure": "2026-11-18T23:40:22Z",
       "source_resultats": "openfootball + football-data.org",
       "ajouts_football_data_org": 49,
       "matchs_joues": 90,
@@ -28,23 +28,23 @@
       "statut": "ok"
     }
   },
-  "derniere_execution": "2026-11-18T15:30:25Z",
+  "derniere_execution": "2026-11-18T23:40:24Z",
   "nba": {
-    "heure": "2026-11-18T15:30:23Z",
+    "heure": "2026-11-18T23:40:23Z",
     "statut": "ok",
-    "jours_interroges": 20,
+    "jours_interroges": 19,
     "jours_en_echec": 0,
     "matchs_total": 14561,
     "dernier_resultat": "2026-11-17"
   },
   "cotes": {
-    "heure": "2026-11-18T15:30:25Z",
+    "heure": "2026-11-18T23:40:24Z",
     "premier-league": {
       "statut": "ok",
       "matchs_cotes": 20,
       "noms_non_associes": []
     },
-    "credits_restants": "360",
+    "credits_restants": "356",
     "la-liga": {
       "statut": "ok",
       "matchs_cotes": 20,
