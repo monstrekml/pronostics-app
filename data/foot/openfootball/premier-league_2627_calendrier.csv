@@ -199,36 +199,36 @@ Date,Heure,Journee,HomeTeam,AwayTeam
 2027-01-06,20:30,Matchday 20,Ipswich,Coventry
 2027-01-06,21:15,Matchday 20,Leeds,Man City
 2027-01-07,21:00,Matchday 20,Man United,Newcastle
-2027-01-16,16:00,Matchday 21,Bournemouth,Ipswich
+2027-01-16,13:30,Matchday 21,Coventry,Everton
 2027-01-16,16:00,Matchday 21,Man City,Nott'm Forest
 2027-01-16,16:00,Matchday 21,Chelsea,Sunderland
-2027-01-16,16:00,Matchday 21,Brentford,Brighton
-2027-01-16,16:00,Matchday 21,Aston Villa,Man United
-2027-01-16,16:00,Matchday 21,Tottenham,Leeds
-2027-01-16,16:00,Matchday 21,Coventry,Everton
 2027-01-16,16:00,Matchday 21,Liverpool,Crystal Palace
 2027-01-16,16:00,Matchday 21,Hull,Arsenal
 2027-01-16,16:00,Matchday 21,Newcastle,Fulham
+2027-01-16,18:30,Matchday 21,Aston Villa,Man United
+2027-01-17,15:00,Matchday 21,Bournemouth,Ipswich
+2027-01-17,17:30,Matchday 21,Tottenham,Leeds
+2027-01-18,21:00,Matchday 21,Brentford,Brighton
 2027-01-23,16:00,Matchday 22,Ipswich,Hull
-2027-01-23,16:00,Matchday 22,Everton,Brentford
-2027-01-23,16:00,Matchday 22,Sunderland,Coventry
-2027-01-23,16:00,Matchday 22,Nott'm Forest,Bournemouth
-2027-01-23,16:00,Matchday 22,Arsenal,Newcastle
-2027-01-23,16:00,Matchday 22,Leeds,Chelsea
 2027-01-23,16:00,Matchday 22,Fulham,Aston Villa
-2027-01-23,16:00,Matchday 22,Man United,Liverpool
-2027-01-23,16:00,Matchday 22,Brighton,Man City
-2027-01-23,16:00,Matchday 22,Crystal Palace,Tottenham
-2027-01-30,16:00,Matchday 23,Tottenham,Sunderland
-2027-01-30,16:00,Matchday 23,Brentford,Man United
+2027-01-23,18:30,Matchday 22,Arsenal,Newcastle
+2027-01-23,21:00,Matchday 22,Brighton,Man City
+2027-01-24,15:00,Matchday 22,Everton,Brentford
+2027-01-24,15:00,Matchday 22,Sunderland,Coventry
+2027-01-24,15:00,Matchday 22,Nott'm Forest,Bournemouth
+2027-01-24,15:00,Matchday 22,Crystal Palace,Tottenham
+2027-01-24,17:30,Matchday 22,Man United,Liverpool
+2027-01-25,21:00,Matchday 22,Leeds,Chelsea
+2027-01-30,13:30,Matchday 23,Liverpool,Everton
 2027-01-30,16:00,Matchday 23,Newcastle,Brighton
-2027-01-30,16:00,Matchday 23,Hull,Crystal Palace
-2027-01-30,16:00,Matchday 23,Coventry,Leeds
-2027-01-30,16:00,Matchday 23,Bournemouth,Fulham
-2027-01-30,16:00,Matchday 23,Chelsea,Nott'm Forest
-2027-01-30,16:00,Matchday 23,Liverpool,Everton
-2027-01-30,16:00,Matchday 23,Man City,Arsenal
 2027-01-30,16:00,Matchday 23,Aston Villa,Ipswich
+2027-01-30,18:30,Matchday 23,Chelsea,Nott'm Forest
+2027-01-31,15:00,Matchday 23,Tottenham,Sunderland
+2027-01-31,15:00,Matchday 23,Hull,Crystal Palace
+2027-01-31,15:00,Matchday 23,Coventry,Leeds
+2027-01-31,15:00,Matchday 23,Bournemouth,Fulham
+2027-01-31,17:30,Matchday 23,Man City,Arsenal
+2027-02-01,21:00,Matchday 23,Brentford,Man United
 2027-02-06,16:00,Matchday 24,Arsenal,Liverpool
 2027-02-06,16:00,Matchday 24,Brighton,Hull
 2027-02-06,16:00,Matchday 24,Sunderland,Aston Villa
