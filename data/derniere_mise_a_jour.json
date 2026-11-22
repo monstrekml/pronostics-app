@@ -1,16 +1,16 @@
 {
   "foot": {
     "premier-league": {
-      "heure": "2026-11-22T14:26:56Z",
+      "heure": "2026-11-22T22:55:03Z",
       "source_resultats": "openfootball + football-data.org",
-      "ajouts_football_data_org": 62,
-      "matchs_joues": 107,
+      "ajouts_football_data_org": 64,
+      "matchs_joues": 109,
       "matchs_au_calendrier": 380,
-      "dernier_resultat": "2026-11-21",
+      "dernier_resultat": "2026-11-22",
       "statut": "ok"
     },
     "la-liga": {
-      "heure": "2026-11-22T14:26:57Z",
+      "heure": "2026-11-22T22:55:05Z",
       "source_resultats": "openfootball + football-data.org",
       "ajouts_football_data_org": 60,
       "matchs_joues": 124,
@@ -19,40 +19,40 @@
       "statut": "ok"
     },
     "ligue-1": {
-      "heure": "2026-11-22T14:26:58Z",
+      "heure": "2026-11-22T22:55:06Z",
       "source_resultats": "openfootball + football-data.org",
-      "ajouts_football_data_org": 55,
-      "matchs_joues": 96,
+      "ajouts_football_data_org": 58,
+      "matchs_joues": 99,
       "matchs_au_calendrier": 306,
-      "dernier_resultat": "2026-11-21",
+      "dernier_resultat": "2026-11-22",
       "statut": "ok"
     }
   },
-  "derniere_execution": "2026-11-22T14:27:00Z",
+  "derniere_execution": "2026-11-22T22:55:10Z",
   "nba": {
-    "heure": "2026-11-22T14:26:59Z",
+    "heure": "2026-11-22T22:55:08Z",
     "statut": "ok",
     "jours_interroges": 19,
     "jours_en_echec": 0,
     "matchs_total": 14566,
-    "dernier_resultat": "2026-11-21"
+    "dernier_resultat": "2026-11-22"
   },
   "cotes": {
-    "heure": "2026-11-22T14:26:59Z",
+    "heure": "2026-11-22T22:55:09Z",
     "premier-league": {
       "statut": "ok",
-      "matchs_cotes": 22,
+      "matchs_cotes": 21,
       "noms_non_associes": []
     },
-    "credits_restants": "328",
+    "credits_restants": "324",
     "la-liga": {
       "statut": "ok",
-      "matchs_cotes": 15,
+      "matchs_cotes": 21,
       "noms_non_associes": []
     },
     "ligue-1": {
       "statut": "ok",
-      "matchs_cotes": 12,
+      "matchs_cotes": 18,
       "noms_non_associes": []
     },
     "nba": {
@@ -60,7 +60,7 @@
       "matchs_cotes": 7,
       "noms_non_associes": []
     },
-    "matchs_archives": 478,
+    "matchs_archives": 498,
     "statut": "ok"
   }
 }
